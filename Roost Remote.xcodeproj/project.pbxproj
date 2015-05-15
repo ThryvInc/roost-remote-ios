@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
+		4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
+		499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
+		499B5DC81B05AB1F00AD67BE /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
+		499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
+		499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
+		499B5DCD1B0637C000AD67BE /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 499B5DCC1B0637BF00AD67BE /* index.json */; };
+		499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */; };
+		49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD55DA1AF8685900673328 /* AppDelegate.swift */; };
+		49CD55E21AF8685900673328 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55E11AF8685900673328 /* Images.xcassets */; };
+		49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55E31AF8685900673328 /* LaunchScreen.xib */; };
+		49CD55FC1AF868C900673328 /* EndpointTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */; };
+		49CD55FD1AF868C900673328 /* EndpointTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */; };
+		49CD56011AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
+		49CD56021AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
+		49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */; };
+		49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */; };
+		49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
+		49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
+		5B8595C9B826B452781528CA /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		70E2A44283651B7F93CDB8A7 /* Pods_Roost_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9C22A58AD0FA18B82E4A /* Pods_Roost_RemoteTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49CD55EB1AF8685900673328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49CD55D41AF8685900673328;
+			remoteInfo = "Roost Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33F21BE3DBB43B7791BDD110 /* Pods-Roost RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4974F6FB1AFAC5E200816CF8 /* Roost Remote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roost Remote-Bridging-Header.h"; sourceTree = "<group>"; };
+		4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkCall.swift; sourceTree = "<group>"; };
+		499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOption.swift; sourceTree = "<group>"; };
+		499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolder.swift; sourceTree = "<group>"; };
+		499B5DCC1B0637BF00AD67BE /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
+		499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManagerSpecs.swift; sourceTree = "<group>"; };
+		49CD55D51AF8685900673328 /* Roost Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roost Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CD55D91AF8685900673328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CD55DA1AF8685900673328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49CD55E11AF8685900673328 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49CD55E41AF8685900673328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		49CD55EA1AF8685900673328 /* Roost RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roost RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49CD55EF1AF8685900673328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTableViewController.swift; sourceTree = "<group>"; };
+		49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndpointTableViewController.xib; sourceTree = "<group>"; };
+		49CD56001AF8696100673328 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
+		49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
+		49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderSpec.swift; sourceTree = "<group>"; };
+		6FA0B710CAA5874CBF45E8D2 /* Pods-Roost Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.debug.xcconfig"; sourceTree = "<group>"; };
+		76823F099D4456D683C4DFDD /* Pods-Roost RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C2C9C22A58AD0FA18B82E4A /* Pods_Roost_RemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roost_RemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roost_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E809CF10684D6B072DE2F06B /* Pods-Roost Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49CD55D21AF8685900673328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8595C9B826B452781528CA /* Pods_Roost_Remote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CD55E71AF8685900673328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E2A44283651B7F93CDB8A7 /* Pods_Roost_RemoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01517ADF94A771DA877D5F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */,
+				8C2C9C22A58AD0FA18B82E4A /* Pods_Roost_RemoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4974F7011AFACBF400816CF8 /* Network Calls */ = {
+			isa = PBXGroup;
+			children = (
+				4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */,
+			);
+			name = "Network Calls";
+			sourceTree = "<group>";
+		};
+		49CD55CC1AF8685900673328 = {
+			isa = PBXGroup;
+			children = (
+				49CD55D71AF8685900673328 /* Roost Remote */,
+				49CD55ED1AF8685900673328 /* Roost RemoteTests */,
+				49CD55D61AF8685900673328 /* Products */,
+				D4CD9180ADF9B1666C92F3AA /* Pods */,
+				01517ADF94A771DA877D5F3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49CD55D61AF8685900673328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49CD55D51AF8685900673328 /* Roost Remote.app */,
+				49CD55EA1AF8685900673328 /* Roost RemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49CD55D71AF8685900673328 /* Roost Remote */ = {
+			isa = PBXGroup;
+			children = (
+				49CD55DA1AF8685900673328 /* AppDelegate.swift */,
+				49CD55FE1AF868F200673328 /* Controllers */,
+				49CD55FF1AF8694400673328 /* Models */,
+				4974F7011AFACBF400816CF8 /* Network Calls */,
+				49CD55E11AF8685900673328 /* Images.xcassets */,
+				4974F6FB1AFAC5E200816CF8 /* Roost Remote-Bridging-Header.h */,
+				49CD55E31AF8685900673328 /* LaunchScreen.xib */,
+				49CD55D81AF8685900673328 /* Supporting Files */,
+			);
+			path = "Roost Remote";
+			sourceTree = "<group>";
+		};
+		49CD55D81AF8685900673328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49CD55D91AF8685900673328 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49CD55ED1AF8685900673328 /* Roost RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */,
+				49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */,
+				49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */,
+				499B5DCC1B0637BF00AD67BE /* index.json */,
+				49CD55EE1AF8685900673328 /* Supporting Files */,
+			);
+			path = "Roost RemoteTests";
+			sourceTree = "<group>";
+		};
+		49CD55EE1AF8685900673328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49CD55EF1AF8685900673328 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49CD55FE1AF868F200673328 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */,
+				49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		49CD55FF1AF8694400673328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49CD56001AF8696100673328 /* EndpointManager.swift */,
+				4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */,
+				499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */,
+				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D4CD9180ADF9B1666C92F3AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0B710CAA5874CBF45E8D2 /* Pods-Roost Remote.debug.xcconfig */,
+				E809CF10684D6B072DE2F06B /* Pods-Roost Remote.release.xcconfig */,
+				33F21BE3DBB43B7791BDD110 /* Pods-Roost RemoteTests.debug.xcconfig */,
+				76823F099D4456D683C4DFDD /* Pods-Roost RemoteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49CD55D41AF8685900673328 /* Roost Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CD55F41AF8685900673328 /* Build configuration list for PBXNativeTarget "Roost Remote" */;
+			buildPhases = (
+				01F04467D06E28B61A223629 /* Check Pods Manifest.lock */,
+				49CD55D11AF8685900673328 /* Sources */,
+				49CD55D21AF8685900673328 /* Frameworks */,
+				49CD55D31AF8685900673328 /* Resources */,
+				D8FD4484FEEF3A35BF40497B /* Copy Pods Resources */,
+				54EE7A22685A01562E615C80 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roost Remote";
+			productName = "Roost Remote";
+			productReference = 49CD55D51AF8685900673328 /* Roost Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49CD55E91AF8685900673328 /* Roost RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49CD55F71AF8685900673328 /* Build configuration list for PBXNativeTarget "Roost RemoteTests" */;
+			buildPhases = (
+				F6CA93C9DF5E4E2DA51D1ED2 /* Check Pods Manifest.lock */,
+				49CD55E61AF8685900673328 /* Sources */,
+				49CD55E71AF8685900673328 /* Frameworks */,
+				49CD55E81AF8685900673328 /* Resources */,
+				0173E268508DD92F23E14571 /* Embed Pods Frameworks */,
+				CD2E8274AE31EF632B443880 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49CD55EC1AF8685900673328 /* PBXTargetDependency */,
+			);
+			name = "Roost RemoteTests";
+			productName = "Roost RemoteTests";
+			productReference = 49CD55EA1AF8685900673328 /* Roost RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49CD55CD1AF8685900673328 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Elliot Schrock";
+				TargetAttributes = {
+					49CD55D41AF8685900673328 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					49CD55E91AF8685900673328 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 49CD55D41AF8685900673328;
+					};
+				};
+			};
+			buildConfigurationList = 49CD55D01AF8685900673328 /* Build configuration list for PBXProject "Roost Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49CD55CC1AF8685900673328;
+			productRefGroup = 49CD55D61AF8685900673328 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49CD55D41AF8685900673328 /* Roost Remote */,
+				49CD55E91AF8685900673328 /* Roost RemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49CD55D31AF8685900673328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */,
+				49CD55FD1AF868C900673328 /* EndpointTableViewController.xib in Resources */,
+				49CD55E21AF8685900673328 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CD55E81AF8685900673328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499B5DCD1B0637C000AD67BE /* index.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0173E268508DD92F23E14571 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		01F04467D06E28B61A223629 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54EE7A22685A01562E615C80 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2E8274AE31EF632B443880 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8FD4484FEEF3A35BF40497B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6CA93C9DF5E4E2DA51D1ED2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49CD55D11AF8685900673328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */,
+				499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
+				49CD56011AF8696100673328 /* EndpointManager.swift in Sources */,
+				49CD55FC1AF868C900673328 /* EndpointTableViewController.swift in Sources */,
+				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
+				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
+				499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CD55E61AF8685900673328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499B5DC81B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
+				49CD56021AF8696100673328 /* EndpointManager.swift in Sources */,
+				49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */,
+				49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */,
+				49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */,
+				499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */,
+				499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
+				49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49CD55EC1AF8685900673328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49CD55D41AF8685900673328 /* Roost Remote */;
+			targetProxy = 49CD55EB1AF8685900673328 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49CD55E31AF8685900673328 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49CD55E41AF8685900673328 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49CD55F21AF8685900673328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49CD55F31AF8685900673328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49CD55F51AF8685900673328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FA0B710CAA5874CBF45E8D2 /* Pods-Roost Remote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "Roost Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49CD55F61AF8685900673328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E809CF10684D6B072DE2F06B /* Pods-Roost Remote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "Roost Remote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		49CD55F81AF8685900673328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F21BE3DBB43B7791BDD110 /* Pods-Roost RemoteTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Roost RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote.app/Roost Remote";
+			};
+			name = Debug;
+		};
+		49CD55F91AF8685900673328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76823F099D4456D683C4DFDD /* Pods-Roost RemoteTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Roost RemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote.app/Roost Remote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49CD55D01AF8685900673328 /* Build configuration list for PBXProject "Roost Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CD55F21AF8685900673328 /* Debug */,
+				49CD55F31AF8685900673328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49CD55F41AF8685900673328 /* Build configuration list for PBXNativeTarget "Roost Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CD55F51AF8685900673328 /* Debug */,
+				49CD55F61AF8685900673328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49CD55F71AF8685900673328 /* Build configuration list for PBXNativeTarget "Roost RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49CD55F81AF8685900673328 /* Debug */,
+				49CD55F91AF8685900673328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49CD55CD1AF8685900673328 /* Project object */;
+}

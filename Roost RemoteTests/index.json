@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Power",
+    "method": "PUT",
+    "endpoint": "/power",
+    "options": {
+      "key": "on",
+      "values": [
+        {
+          "name": "On",
+          "value": true
+        },
+        {
+          "name": "Off",
+          "value": false
+        }
+      ]
+    }
+  },
+  {
+    "name": "Source",
+    "method": "PUT",
+    "endpoint": "/source",
+    "options": {
+      "key": "source",
+      "values": [
+        {
+          "name": "TV",
+          "value": 1
+        },
+        {
+          "name": "AV",
+          "value": 2
+        },
+        {
+          "name": "GameCube",
+          "value": 3
+        },
+        {
+          "name": "OSMC",
+          "value": 4
+        },
+        {
+          "name": "Chromecast",
+          "value": 5
+        },
+        {
+          "name": "Raspberry Pi",
+          "value": 6
+        }
+      ]
+    }
+  }
+]
