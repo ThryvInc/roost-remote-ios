@@ -2,7 +2,6 @@
 language: objective-c
 before_install:
   - gem update cocoapods
-  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
-xcode_workspace: Roost\ Remote.xcworkspace 
-xcode_scheme: Roost\ RemoteTests
+xcode_workspace: Roost Remote.xcworkspace 
+xcode_scheme: Roost RemoteTests
 xcode_sdk: iphonesimulator8.1
