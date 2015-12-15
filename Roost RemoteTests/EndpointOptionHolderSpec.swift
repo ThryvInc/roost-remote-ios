@@ -33,15 +33,21 @@ class EndpointOptionHolderSpec: QuickSpec {
             
             context("gets created by Mantle", { () -> Void in
                 it("is not nil") {
-                    var mantleError: NSError?
-                    var holder: EndpointOptionHolder? = MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json, error: &mantleError) as? EndpointOptionHolder
-                    expect(holder).toNot(beNil())
+                    do {
+                        let holder: EndpointOptionHolder? = try MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json) as? EndpointOptionHolder
+                        expect(holder).toNot(beNil())
+                    }catch let error as NSError {
+                        expect(error).to(beNil())
+                    }
                 }
                 it("has a key and options") {
-                    var mantleError: NSError?
-                    var holder: EndpointOptionHolder! = MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json, error: &mantleError) as! EndpointOptionHolder
-                    expect(holder.name).toNot(beNil())
-                    expect(holder.options).toNot(beNil())
+                    do {
+                        let holder: EndpointOptionHolder? = try MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json) as? EndpointOptionHolder
+                        expect(holder!.name).toNot(beNil())
+                        expect(holder!.options).toNot(beNil())
+                    }catch let error as NSError {
+                        expect(error).to(beNil())
+                    }
                 }
             })
         })

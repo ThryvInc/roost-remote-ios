@@ -22,12 +22,14 @@
 		49CD55FD1AF868C900673328 /* EndpointTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */; };
 		49CD56011AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
 		49CD56021AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
+		49DCFFAF1C1FB729003044CE /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */; };
+		49DCFFB01C1FB729003044CE /* Pods_Roost_Remote.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */; };
 		49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */; };
 		49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
 		49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
-		5B8595C9B826B452781528CA /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		70E2A44283651B7F93CDB8A7 /* Pods_Roost_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9C22A58AD0FA18B82E4A /* Pods_Roost_RemoteTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5B8595C9B826B452781528CA /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB18B3E03CC72CA44A17121E /* Pods_Roost_Remote.framework */; };
+		70E2A44283651B7F93CDB8A7 /* Pods_Roost_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C9C22A58AD0FA18B82E4A /* Pods_Roost_RemoteTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,20 @@
 			remoteInfo = "Roost Remote";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49DCFFB11C1FB729003044CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49DCFFB01C1FB729003044CE /* Pods_Roost_Remote.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33F21BE3DBB43B7791BDD110 /* Pods-Roost RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DCFFAF1C1FB729003044CE /* Pods_Roost_Remote.framework in Frameworks */,
 				5B8595C9B826B452781528CA /* Pods_Roost_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +229,7 @@
 				49CD55D31AF8685900673328 /* Resources */,
 				D8FD4484FEEF3A35BF40497B /* Copy Pods Resources */,
 				54EE7A22685A01562E615C80 /* Embed Pods Frameworks */,
+				49DCFFB11C1FB729003044CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +267,8 @@
 		49CD55CD1AF8685900673328 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Elliot Schrock";
 				TargetAttributes = {
@@ -535,7 +555,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
@@ -551,7 +571,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";

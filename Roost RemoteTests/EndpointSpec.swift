@@ -37,17 +37,24 @@ class EndpointSpec: QuickSpec {
             
             context("gets created by Mantle", { () -> Void in
                 it("is not nil") {
-                    var mantleError: NSError?
-                    var endpoint: Endpoint? = MTLJSONAdapter.modelOfClass(Endpoint.self, fromJSONDictionary: self.endpointJson, error: &mantleError) as? Endpoint
-                    expect(endpoint).toNot(beNil())
+                    do {
+                        var endpoint: Endpoint? = try MTLJSONAdapter.modelOfClass(Endpoint.self, fromJSONDictionary: self.endpointJson) as? Endpoint
+                        expect(endpoint).toNot(beNil())
+                    }catch let error as NSError {
+                        expect(error).to(beNil())
+                    }
                 }
                 it("has a name, a method, an endpoint, and options") {
-                    var mantleError: NSError?
-                    var endpoint: Endpoint! = MTLJSONAdapter.modelOfClass(Endpoint.self, fromJSONDictionary: self.endpointJson, error: &mantleError) as! Endpoint
-                    expect(endpoint.name).toNot(beNil())
-                    expect(endpoint.method).toNot(beNil())
-                    expect(endpoint.endpoint).toNot(beNil())
-                    expect(endpoint.options).toNot(beNil())
+                    do {
+                        var endpoint: Endpoint? = try MTLJSONAdapter.modelOfClass(Endpoint.self, fromJSONDictionary: self.endpointJson) as? Endpoint
+                        expect(endpoint).toNot(beNil())
+                        expect(endpoint!.name).toNot(beNil())
+                        expect(endpoint!.method).toNot(beNil())
+                        expect(endpoint!.endpoint).toNot(beNil())
+                        expect(endpoint!.options).toNot(beNil())
+                    }catch let error as NSError {
+                        expect(error).to(beNil())
+                    }
                 }
             })
         })

@@ -18,10 +18,21 @@ public class EndpointManager: NSObject {
         baseNetworkCall.endpoint = "/index"
         baseNetworkCall.execute { (data, response, error) -> Void in
             var jsonError: NSError?
-            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: &jsonError)
-            var mantleError: NSError?
-            self.endpoints = MTLJSONAdapter.modelsOfClass(Endpoint.self, fromJSONArray: json as! [AnyObject], error: &mantleError) as! [Endpoint]
-            completion(mantleError)
+            let json: AnyObject?
+            do {
+                json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+            } catch var error as NSError {
+                jsonError = error
+                json = nil
+            } catch {
+                fatalError()
+            }
+            do {
+                self.endpoints = try MTLJSONAdapter.modelsOfClass(Endpoint.self, fromJSONArray: json as! [AnyObject]) as! [Endpoint]
+                completion(nil)
+            }catch var error as NSError {
+                completion(error)
+            }
         }
     }
 }

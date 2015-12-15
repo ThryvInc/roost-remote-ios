@@ -30,7 +30,13 @@ class Endpoint: MTLModel, MTLJSONSerializing {
     
     func execute(completion: ((Bool) -> Void)) {
         var error: NSError?
-        let jsonData: NSData? = NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted, error: &error)
+        let jsonData: NSData?
+        do {
+            jsonData = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted)
+        } catch let error1 as NSError {
+            error = error1
+            jsonData = nil
+        }
         if let jsonError = error {
             completion(false)
         }else if let data: NSData = jsonData {
