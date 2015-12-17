@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49333D6B1B37517E00DA154F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49333D6A1B37517E00DA154F /* UIColor.swift */; };
 		4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
 		4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
 		499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
@@ -15,11 +16,13 @@
 		499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
 		499B5DCD1B0637C000AD67BE /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 499B5DCC1B0637BF00AD67BE /* index.json */; };
 		499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */; };
+		49C1B7A01B11594800F109C3 /* EndpointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */; };
+		49C1B7A11B11594800F109C3 /* EndpointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */; };
+		49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */; };
+		49C1B7A51B116B8F00F109C3 /* EndpointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C1B7A31B116B8F00F109C3 /* EndpointsViewController.xib */; };
 		49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD55DA1AF8685900673328 /* AppDelegate.swift */; };
 		49CD55E21AF8685900673328 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55E11AF8685900673328 /* Images.xcassets */; };
 		49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55E31AF8685900673328 /* LaunchScreen.xib */; };
-		49CD55FC1AF868C900673328 /* EndpointTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */; };
-		49CD55FD1AF868C900673328 /* EndpointTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */; };
 		49CD56011AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
 		49CD56021AF8696100673328 /* EndpointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CD56001AF8696100673328 /* EndpointManager.swift */; };
 		49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */; };
@@ -42,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		33F21BE3DBB43B7791BDD110 /* Pods-Roost RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49333D6A1B37517E00DA154F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4974F6FB1AFAC5E200816CF8 /* Roost Remote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roost Remote-Bridging-Header.h"; sourceTree = "<group>"; };
 		4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkCall.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolder.swift; sourceTree = "<group>"; };
 		499B5DCC1B0637BF00AD67BE /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManagerSpecs.swift; sourceTree = "<group>"; };
+		49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTableViewCell.swift; sourceTree = "<group>"; };
+		49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndpointTableViewCell.xib; sourceTree = "<group>"; };
+		49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointsViewController.swift; sourceTree = "<group>"; };
+		49C1B7A31B116B8F00F109C3 /* EndpointsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndpointsViewController.xib; sourceTree = "<group>"; };
 		49CD55D51AF8685900673328 /* Roost Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roost Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CD55D91AF8685900673328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49CD55DA1AF8685900673328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +64,6 @@
 		49CD55E41AF8685900673328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		49CD55EA1AF8685900673328 /* Roost RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roost RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CD55EF1AF8685900673328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTableViewController.swift; sourceTree = "<group>"; };
-		49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndpointTableViewController.xib; sourceTree = "<group>"; };
 		49CD56001AF8696100673328 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
 		49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
 		49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderSpec.swift; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 			name = "Network Calls";
 			sourceTree = "<group>";
 		};
+		49C1B79D1B1158B400F109C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */,
+				49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		49CD55CC1AF8685900673328 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				49CD55DA1AF8685900673328 /* AppDelegate.swift */,
+				49C1B79D1B1158B400F109C3 /* Views */,
 				49CD55FE1AF868F200673328 /* Controllers */,
 				49CD55FF1AF8694400673328 /* Models */,
 				4974F7011AFACBF400816CF8 /* Network Calls */,
@@ -171,8 +187,8 @@
 		49CD55FE1AF868F200673328 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				49CD55FA1AF868C900673328 /* EndpointTableViewController.swift */,
-				49CD55FB1AF868C900673328 /* EndpointTableViewController.xib */,
+				49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */,
+				49C1B7A31B116B8F00F109C3 /* EndpointsViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 				4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */,
 				499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */,
 				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
+				49333D6A1B37517E00DA154F /* UIColor.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -286,8 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */,
-				49CD55FD1AF868C900673328 /* EndpointTableViewController.xib in Resources */,
+				49C1B7A11B11594800F109C3 /* EndpointTableViewCell.xib in Resources */,
 				49CD55E21AF8685900673328 /* Images.xcassets in Resources */,
+				49C1B7A51B116B8F00F109C3 /* EndpointsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +419,10 @@
 			files = (
 				4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */,
 				499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
+				49C1B7A01B11594800F109C3 /* EndpointTableViewCell.swift in Sources */,
+				49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */,
+				49333D6B1B37517E00DA154F /* UIColor.swift in Sources */,
 				49CD56011AF8696100673328 /* EndpointManager.swift in Sources */,
-				49CD55FC1AF868C900673328 /* EndpointTableViewController.swift in Sources */,
 				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
 				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
 				499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
@@ -533,11 +553,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -549,11 +571,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 			};
 			name = Release;

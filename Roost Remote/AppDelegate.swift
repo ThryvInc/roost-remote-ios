@@ -16,7 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let endpointVC = EndpointTableViewController()
+        let mainFont = UIFont(name: "AvenirNext-DemiBold", size: 20)!
+        let buttonFont = UIFont(name: "AvenirNext-DemiBold", size: 17)!
+        
+        application.setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        UINavigationBar.appearance().barTintColor = UIColor.navBgColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : mainFont, NSForegroundColorAttributeName : UIColor.navTextColor()]
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName : buttonFont], forState: UIControlState.Normal)
+        UIBarButtonItem.appearance().tintColor = UIColor.navHighlightColor()
+        
+        UITableView.appearance().backgroundColor = UIColor.tableBgColor()
+        
+        let endpointVC = EndpointsViewController(nibName: "EndpointsViewController", bundle: nil)
         let navVC = UINavigationController(rootViewController: endpointVC)
         window?.rootViewController = navVC;
         window?.makeKeyAndVisible()
