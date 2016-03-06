@@ -1,21 +1,30 @@
 PODS:
-  - Mantle (2.0):
-    - Mantle/extobjc (= 2.0)
-  - Mantle/extobjc (2.0)
-  - Nimble (0.4.2)
-  - Nocilla (0.9.0)
-  - Quick (0.3.1)
+  - Eson (0.1.0)
+  - Nimble (3.1.0)
+  - Nocilla (0.10.0)
+  - Quick (0.9.1)
 
 DEPENDENCIES:
-  - Mantle
+  - Eson (from `https://github.com/schrockblock/eson`)
   - Nimble
   - Nocilla
   - Quick
 
-SPEC CHECKSUMS:
-  Mantle: d7c75b6fb789b20f7ae30cd0d09435fe545896ff
-  Nimble: 49b7a7da8919f42823d37c6d68cc6d15a7009f32
-  Nocilla: d7d96e8a11e363f0d7c976d48b320c43d61fb471
-  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
+EXTERNAL SOURCES:
+  Eson:
+    :git: https://github.com/schrockblock/eson
 
-COCOAPODS: 0.37.1
+CHECKOUT OPTIONS:
+  Eson:
+    :commit: a55a0ca4012089b036ee0f563a1d6ca547a90430
+    :git: https://github.com/schrockblock/eson
+
+SPEC CHECKSUMS:
+  Eson: 764d94896bdf6a56682ee9ed0027617f03f3ccb3
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  Nocilla: ae0a2b05f3087b473624ac2b25903695df51246a
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
+
+PODFILE CHECKSUM: e2daa48cb9c2ae752d63ea02b3e6960bee99690f
+
+COCOAPODS: 1.0.0.beta.2

@@ -7,44 +7,33 @@
 //
 
 import UIKit
-import Mantle
+import Eson
 
-class Endpoint: MTLModel, MTLJSONSerializing {
+class Endpoint: NSObject {
     var name: String = ""
     var endpoint: String = ""
     var method: String = ""
     var options: EndpointOptionHolder!
     var json: NSDictionary!
     
-    class func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
-        return ["name":"name", "endpoint":"endpoint", "method":"method", "options":"options"]
-    }
-    
-    class func JSONTransformerForKey(key: String!) -> NSValueTransformer! {
-        if key == "options" {
-            return MTLJSONAdapter.dictionaryTransformerWithModelClass(EndpointOptionHolder)
-        }
-        
-        return nil
-    }
-    
     func execute(completion: ((Bool) -> Void)) {
-        var error: NSError?
-        let jsonData: NSData? = NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted, error: &error)
-        if let jsonError = error {
-            completion(false)
-        }else if let data: NSData = jsonData {
-            let call: BaseNetworkCall = BaseNetworkCall()
-            call.endpoint = self.endpoint
-            call.httpMethod = self.method
-            call.postData = data
-            call.execute { (data, response, error) -> Void in
-                if let httpResponse = response {
-                    completion(response.statusCode < 300)
-                }else{
-                    completion(error == nil)
+        do {
+            let jsonData: NSData? = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted)
+            if let data: NSData = jsonData {
+                let call: BaseNetworkCall = BaseNetworkCall()
+                call.endpoint = self.endpoint
+                call.httpMethod = self.method
+                call.postData = data
+                call.execute { (data, response, error) -> Void in
+                    if let httpResponse = response {
+                        completion(httpResponse.statusCode < 300)
+                    }else{
+                        completion(error == nil)
+                    }
                 }
             }
+        }catch {
+            completion(false)
         }
     }
 }

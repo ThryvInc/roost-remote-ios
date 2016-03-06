@@ -9,7 +9,7 @@
 import UIKit
 
 class BaseNetworkCall: NSObject {
-    let hostName: String = "192.168.0.124:8081"
+    let hostName: String = "192.168.0.133:8081"
     let scheme: String = "http"
     let apiVersion: String = "/api/v1"
     var endpoint: String!

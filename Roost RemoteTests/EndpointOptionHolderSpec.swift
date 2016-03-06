@@ -7,12 +7,12 @@
 //
 
 import Roost_Remote
-import Mantle
+import Eson
 import Quick
 import Nimble
 
 class EndpointOptionHolderSpec: QuickSpec {
-    var json: [NSObject: AnyObject]!
+    var json: [String: AnyObject]!
     override func spec() {
         describe("the endpoint", { () -> Void in
             beforeSuite {
@@ -31,17 +31,20 @@ class EndpointOptionHolderSpec: QuickSpec {
                 ]
             }
             
-            context("gets created by Mantle", { () -> Void in
+            context("gets created by Eson", { () -> Void in
                 it("is not nil") {
-                    var mantleError: NSError?
-                    var holder: EndpointOptionHolder? = MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json, error: &mantleError) as? EndpointOptionHolder
+                    let eson = Eson()
+                    eson.deserializers.append(EndpointOptionArrayDeserializer())
+                    let holder: EndpointOptionHolder? = eson.fromJsonDictionary(self.json, clazz: EndpointOptionHolder.self)
                     expect(holder).toNot(beNil())
                 }
                 it("has a key and options") {
-                    var mantleError: NSError?
-                    var holder: EndpointOptionHolder! = MTLJSONAdapter.modelOfClass(EndpointOptionHolder.self, fromJSONDictionary: self.json, error: &mantleError) as! EndpointOptionHolder
-                    expect(holder.name).toNot(beNil())
-                    expect(holder.options).toNot(beNil())
+                    let eson = Eson()
+                    eson.deserializers.append(EndpointOptionArrayDeserializer())
+                    let holder: EndpointOptionHolder? = eson.fromJsonDictionary(self.json, clazz: EndpointOptionHolder.self)
+                    print(holder!)
+                    expect(holder?.name).toNot(beNil())
+                    expect(holder?.options).toNot(beNil())
                 }
             })
         })

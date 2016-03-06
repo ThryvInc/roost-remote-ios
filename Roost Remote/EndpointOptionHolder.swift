@@ -7,22 +7,14 @@
 //
 
 import UIKit
-import Mantle
+import Eson
 
-class EndpointOptionHolder: MTLModel, MTLJSONSerializing {
+public class EndpointOptionHolder: NSObject, EsonKeyMapper {
     var name: String!
     var options: [EndpointOption]!
     
-    class func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
-        return ["name":"key", "options":"values"]
-    }
-    
-    class func JSONTransformerForKey(key: String!) -> NSValueTransformer! {
-        if key == "options" {
-            return MTLJSONAdapter.arrayTransformerWithModelClass(EndpointOption.self)
-        }
-        
-        return nil
+    public class func esonPropertyNameToKeyMap() -> [String : String] {
+        return ["name":"key","options":"values"]
     }
    
 }
