@@ -17,8 +17,8 @@ class BaseNetworkCall: NSObject {
     var postData: NSData?
     
     func execute(completion: ((NSData!, NSHTTPURLResponse!, NSError!) -> Void)){
-        var session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        var request = NSMutableURLRequest(URL: NSURL(scheme: scheme, host: hostName, path: apiVersion + endpoint)!)
+        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        let request = NSMutableURLRequest(URL: NSURL(scheme: scheme, host: hostName, path: apiVersion + endpoint)!)
         request.HTTPMethod = httpMethod;
         request.setValue("application/json", forHTTPHeaderField: "Content-type")
         if let data = postData where httpMethod != "GET" {

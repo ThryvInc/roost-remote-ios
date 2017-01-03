@@ -11,7 +11,7 @@ import Eson
 
 public class EndpointOptionHolder: NSObject, EsonKeyMapper {
     var name: String!
-    var options: [EndpointOption]!
+    var options: [EndpointOption]?
     
     public class func esonPropertyNameToKeyMap() -> [String : String] {
         return ["name":"key","options":"values"]

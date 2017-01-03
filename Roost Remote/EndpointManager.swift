@@ -20,7 +20,9 @@ public class EndpointManager: NSObject {
             if netError == nil {
                 do {
                     let json: AnyObject? = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
-                    self.endpoints = Eson().fromJsonArray(json as? [[String: AnyObject]], clazz: Endpoint.self)!
+                    let eson = Eson()
+                    eson.deserializers.append(EndpointOptionHolderDeserializer())
+                    self.endpoints = eson.fromJsonArray(json as? [[String: AnyObject]], clazz: Endpoint.self)!
                     completion(nil)
                 }catch let error as NSError{
                     completion(error)

@@ -21,11 +21,11 @@ class EndpointOptionHolderSpec: QuickSpec {
                     "values": [
                         [
                             "name": "On",
-                            "value": "true"
+                            "value": true
                         ],
                         [
                             "name": "Off",
-                            "value": "false"
+                            "value": false
                         ]
                     ]
                 ]
@@ -35,6 +35,7 @@ class EndpointOptionHolderSpec: QuickSpec {
                 it("is not nil") {
                     let eson = Eson()
                     eson.deserializers.append(EndpointOptionArrayDeserializer())
+                    eson.deserializers.append(EndpointOptionHolderDeserializer())
                     let holder: EndpointOptionHolder? = eson.fromJsonDictionary(self.json, clazz: EndpointOptionHolder.self)
                     expect(holder).toNot(beNil())
                 }

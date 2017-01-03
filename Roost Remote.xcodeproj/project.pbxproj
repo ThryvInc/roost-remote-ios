@@ -32,6 +32,8 @@
 		49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */; };
 		49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
 		49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
+		49ED29201C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */; };
+		49ED29211C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */; };
 		510F8E3A85610C2AC30EFFC6 /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,7 @@
 		49CD56001AF8696100673328 /* EndpointManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManager.swift; sourceTree = "<group>"; };
 		49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
 		49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderSpec.swift; sourceTree = "<group>"; };
+		49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderDeserializer.swift; sourceTree = "<group>"; };
 		71320FE0028392A072608406 /* Pods-Roost Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.release.xcconfig"; sourceTree = "<group>"; };
 		C4D5A6E1B511B46036AD174A /* Pods-Roost RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +199,7 @@
 				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
 				49333D6A1B37517E00DA154F /* UIColor.swift */,
 				494E9F721C8BE44100977632 /* EndpointOptionArrayDeserializer.swift */,
+				49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -270,6 +274,8 @@
 		49CD55CD1AF8685900673328 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Elliot Schrock";
 				TargetAttributes = {
@@ -427,6 +433,7 @@
 				494E9F731C8BE44100977632 /* EndpointOptionArrayDeserializer.swift in Sources */,
 				49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */,
 				49333D6B1B37517E00DA154F /* UIColor.swift in Sources */,
+				49ED29201C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */,
 				49CD56011AF8696100673328 /* EndpointManager.swift in Sources */,
 				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
 				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
@@ -446,6 +453,7 @@
 				49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */,
 				499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */,
 				499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
+				49ED29211C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */,
 				49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +497,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -511,6 +520,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -533,7 +543,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -548,6 +559,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -565,7 +577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -577,13 +589,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 			};
 			name = Release;

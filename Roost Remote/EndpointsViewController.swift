@@ -72,23 +72,26 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.endpointTableView.deselectRowAtIndexPath(indexPath, animated: true)
         let endpoint: Endpoint = endpointManager.endpoints[indexPath.row]
-        let options: [EndpointOption] = endpoint.options.options
-        let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
-        for option in options {
-            let action: UIAlertAction = UIAlertAction(title: option.name, style: UIAlertActionStyle.Default, handler: { (action) -> Void in
-                endpoint.json = [endpoint.options.name : option.endpointOption]
-                endpoint.execute { (success) in
-                    if !success {
-                        let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: "Ruh roh", delegate: self, cancelButtonTitle: "OK")
-                        alert.show();
-                    }
+        if let endpointOptions = endpoint.options {
+            if let options = endpointOptions.options {
+                let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+                for option in options {
+                    let action: UIAlertAction = UIAlertAction(title: option.name, style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+                        endpoint.json = [endpointOptions.name : option.endpointOption]
+                        endpoint.execute { (success) in
+                            if !success {
+                                let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: "Ruh roh", delegate: self, cancelButtonTitle: "OK")
+                                alert.show();
+                            }
+                        }
+                    })
+                    alert.addAction(action)
                 }
-            })
-            alert.addAction(action)
+                alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
+                    alert.dismissViewControllerAnimated(true, completion: { () -> Void in})
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
-        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
-            alert.dismissViewControllerAnimated(true, completion: { () -> Void in})
-        }))
-        self.presentViewController(alert, animated: true, completion: nil)
     }
 }

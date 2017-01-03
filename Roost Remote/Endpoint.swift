@@ -13,7 +13,7 @@ class Endpoint: NSObject {
     var name: String = ""
     var endpoint: String = ""
     var method: String = ""
-    var options: EndpointOptionHolder!
+    var options: EndpointOptionHolder?
     var json: NSDictionary!
     
     func execute(completion: ((Bool) -> Void)) {

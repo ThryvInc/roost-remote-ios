@@ -26,7 +26,7 @@ class EndpointManagerSpecs: QuickSpec {
             it("downloads the endpoints") {
                 let json: NSData = NSData(contentsOfFile: NSBundle(forClass: self.classForCoder).pathForResource("index", ofType: "json")!)!
                 let endpointManager: EndpointManager = EndpointManager()
-                stubRequest("GET", "http://192.168.0.124:8081/api/v1/index").withHeader("Content-type", "application/json").andReturn(200).withBody(json)
+                stubRequest("GET", "http://192.168.0.133:8081/api/v1/index").withHeader("Content-type", "application/json").andReturn(200).withBody(json)
                 var endpoints: [Endpoint]?
                 endpointManager.fetchEndpoints({ (error) -> Void in
                     endpoints = endpointManager.endpoints
