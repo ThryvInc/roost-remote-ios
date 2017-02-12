@@ -9,12 +9,11 @@
 import UIKit
 import Eson
 
-public class EndpointOption: NSObject, EsonKeyMapper {
+open class EndpointOption: NSObject, EndpointOptionProtocol {
     var name: String!
-    var endpointOption: NSNumber!
     
-    public class func esonPropertyNameToKeyMap() -> [String : String] {
-        return ["endpointOption":"value"]
+    open func endpointOption() -> AnyObject? {
+        return "" as AnyObject?
     }
    
 }

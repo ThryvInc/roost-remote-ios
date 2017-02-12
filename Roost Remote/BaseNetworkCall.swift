@@ -9,24 +9,25 @@
 import UIKit
 
 class BaseNetworkCall: NSObject {
-    let hostName: String = "192.168.0.133:8081"
+    var hostName: String = "192.168.0.133:8081"
     let scheme: String = "http"
-    let apiVersion: String = "/api/v1"
+    var namespace: String = ""
     var endpoint: String!
     var httpMethod: String!
-    var postData: NSData?
+    var postData: Data?
     
-    func execute(completion: ((NSData!, NSHTTPURLResponse!, NSError!) -> Void)){
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let request = NSMutableURLRequest(URL: NSURL(scheme: scheme, host: hostName, path: apiVersion + endpoint)!)
-        request.HTTPMethod = httpMethod;
+    func execute(_ completion: @escaping ((Data?, HTTPURLResponse?, NSError?) -> Void)){
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let request = NSMutableURLRequest(url: (NSURL(scheme: scheme, host: hostName, path: "/" + namespace + endpoint) as? URL)!)
+        request.httpMethod = httpMethod;
         request.setValue("application/json", forHTTPHeaderField: "Content-type")
-        if let data = postData where httpMethod != "GET" {
-            request.HTTPBody = data
+        if let data = postData, httpMethod != "GET" {
+            request.httpBody = data
         }
         
-        session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            completion(data, response as? NSHTTPURLResponse, error)
-        }).resume();
+        session.dataTask(with: request as URLRequest) { (data, response, error) in
+            completion(data, response as? HTTPURLResponse, error as? NSError)
+            return ()
+        }.resume();
     }
 }

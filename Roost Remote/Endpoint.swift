@@ -14,13 +14,22 @@ class Endpoint: NSObject {
     var endpoint: String = ""
     var method: String = ""
     var options: EndpointOptionHolder?
-    var json: NSDictionary!
     
-    func execute(completion: ((Bool) -> Void)) {
+    func execute(host: String, namespace: String, option: EndpointOption, _ completion: @escaping ((Bool) -> Void)) {
         do {
-            let jsonData: NSData? = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted)
-            if let data: NSData = jsonData {
+            var json = [self.options!.name : option.endpointOption()]
+            if let staticValues = self.options?.staticValues {
+                for value in staticValues {
+                    json[value.name] = value.endpointOption()
+                }
+            }
+            let jsonData: Data? = try JSONSerialization.data(withJSONObject: json, options: JSONSerialization.WritingOptions.prettyPrinted)
+            if let data: Data = jsonData {
+//                let string = String(data: data, encoding: String.Encoding.utf8)
+//                print(string!)
                 let call: BaseNetworkCall = BaseNetworkCall()
+                call.hostName = host
+                call.namespace = namespace
                 call.endpoint = self.endpoint
                 call.httpMethod = self.method
                 call.postData = data

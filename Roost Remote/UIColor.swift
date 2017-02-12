@@ -16,10 +16,10 @@ extension UIColor {
         return UIColor(red: 9.0/255.0, green: 188.0/255.0, blue: 95.0/255.0, alpha: 1)
     }
     class func tableBgColor() -> UIColor {
-        return whiteColor() //UIColor(red: 128.0/255.0, green: 19.0/255.0, blue: 188.0/255.0, alpha: 1)
+        return white //UIColor(red: 128.0/255.0, green: 19.0/255.0, blue: 188.0/255.0, alpha: 1)
     }
     class func navTextColor() -> UIColor {
-        return whiteColor() //UIColor(red: 221.0/255.0, green: 191.0/255.0, blue: 19.0/255.0, alpha: 1)
+        return white //UIColor(red: 221.0/255.0, green: 191.0/255.0, blue: 19.0/255.0, alpha: 1)
     }
     class func cardViewBgColor() -> UIColor {
         return teal()

@@ -9,7 +9,7 @@
 import UIKit
 
 class EndpointsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let endpointManager: EndpointManager = EndpointManager()
+    var describer: DeviceDescription!
     @IBOutlet var endpointTableView: UITableView! 
     @IBOutlet weak var loadButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
@@ -17,24 +17,24 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Roost Remote"
+        title = describer.name
         
-        editButton.setTitleColor(UIColor.buttonTextColor(), forState: UIControlState.Normal)
+        editButton.setTitleColor(UIColor.buttonTextColor(), for: UIControlState())
         editButton.backgroundColor = UIColor.buttonBgColor()
         editButton.layer.cornerRadius = editButton.bounds.width / 2
         
         endpointTableView.dataSource = self
         endpointTableView.delegate = self
-        endpointTableView.registerNib(UINib(nibName: "EndpointTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        endpointTableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: "cell")
         
-        let rightButton: UIBarButtonItem! = UIBarButtonItem(title: "LOAD", style: UIBarButtonItemStyle.Plain, target: self, action: "refresh")
+        let rightButton: UIBarButtonItem! = UIBarButtonItem(title: "LOAD", style: UIBarButtonItemStyle.plain, target: self, action: #selector(EndpointsViewController.refresh))
         navigationItem.rightBarButtonItem = rightButton
-        navigationController?.navigationBar.translucent = false
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     func refresh() {
-        endpointManager.fetchEndpoints({ (error) -> Void in
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        describer.fetchEndpoints( { (error) -> Void in
+            DispatchQueue.main.async(execute: { () -> Void in
                 if error == nil {
                     self.endpointTableView.reloadData()
                 } else {
@@ -47,50 +47,57 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
     
     // MARK: - Table view data source
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return endpointManager.endpoints.count != 0 ? 1 : 0
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return describer.device?.endpoints?.count != 0 ? 1 : 0
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.endpointManager.endpoints.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let device = describer.device {
+            return device.endpoints?.count ?? 0
+        }
+        return 0
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 105
-    }
-    
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "TV"
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: EndpointTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! EndpointTableViewCell
-        cell.nameLabel.text = self.endpointManager.endpoints[indexPath.row].name
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        if let device = describer.device {
+            cell.textLabel?.text = device.endpoints?[indexPath.row].name
+            cell.detailTextLabel?.text = device.endpoints?[indexPath.row].endpoint
+        }
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.endpointTableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let endpoint: Endpoint = endpointManager.endpoints[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.endpointTableView.deselectRow(at: indexPath, animated: true)
+        let endpoint: Endpoint = (describer.device?.endpoints?[indexPath.row])!
         if let endpointOptions = endpoint.options {
             if let options = endpointOptions.options {
-                let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
-                for option in options {
-                    let action: UIAlertAction = UIAlertAction(title: option.name, style: UIAlertActionStyle.Default, handler: { (action) -> Void in
-                        endpoint.json = [endpointOptions.name : option.endpointOption]
-                        endpoint.execute { (success) in
-                            if !success {
-                                let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: "Ruh roh", delegate: self, cancelButtonTitle: "OK")
-                                alert.show();
-                            }
-                        }
-                    })
-                    alert.addAction(action)
+                if options.count == 1 {
+                    execute(endpoint: endpoint, option: options[0])
+                }else{
+                    let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
+                    for option in options {
+                        let action: UIAlertAction = UIAlertAction(title: option.name, style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                            self.execute(endpoint: endpoint, option: option)
+                        })
+                        alert.addAction(action)
+                    }
+                    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in
+                        alert.dismiss(animated: true, completion: { () -> Void in})
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                 }
-                alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: { (action) -> Void in
-                    alert.dismissViewControllerAnimated(true, completion: { () -> Void in})
-                }))
-                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func execute(endpoint: Endpoint, option: EndpointOption) {
+        if let device = self.describer.device {
+            endpoint.execute(host: device.host!, namespace: device.hostNamespace!, option: option) { (success) in
+                if !success {
+                    let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: "Ruh roh", delegate: self, cancelButtonTitle: "OK")
+                    alert.show();
+                }
             }
         }
     }

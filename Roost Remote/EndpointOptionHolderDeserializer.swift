@@ -15,9 +15,9 @@ class EndpointOptionHolderDeserializer: Deserializer {
         return "EndpointOptionHolder"
     }
     
-    func valueForObject(object: AnyObject) -> AnyObject?{
+    func valueForObject(_ object: AnyObject) -> AnyObject?{
         let eson = Eson()
-        eson.deserializers.append(EndpointOptionArrayDeserializer())
+        eson.deserializers.append(EndpointOptionDeserializer())
         return eson.fromJsonDictionary(object as? [String : AnyObject], clazz: EndpointOptionHolder.self)
     }
 }

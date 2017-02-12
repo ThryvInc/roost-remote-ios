@@ -9,11 +9,12 @@
 import UIKit
 import Eson
 
-public class EndpointOptionHolder: NSObject, EsonKeyMapper {
+open class EndpointOptionHolder: NSObject, EsonKeyMapper {
     var name: String!
+    var staticValues: [EndpointOption]?
     var options: [EndpointOption]?
     
-    public class func esonPropertyNameToKeyMap() -> [String : String] {
+    open class func esonPropertyNameToKeyMap() -> [String : String] {
         return ["name":"key","options":"values"]
     }
    
