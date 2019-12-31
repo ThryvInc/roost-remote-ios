@@ -10,7 +10,7 @@ import UIKit
 
 class EndpointsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var describer: DeviceDescription!
-    @IBOutlet var endpointTableView: UITableView! 
+    @IBOutlet var endpointTableView: UITableView!
     @IBOutlet weak var loadButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
     
@@ -19,7 +19,7 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
         
         title = describer.name
         
-        editButton.setTitleColor(UIColor.buttonTextColor(), for: UIControlState())
+        editButton.setTitleColor(UIColor.buttonTextColor(), for: UIControl.State())
         editButton.backgroundColor = UIColor.buttonBgColor()
         editButton.layer.cornerRadius = editButton.bounds.width / 2
         
@@ -27,18 +27,23 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
         endpointTableView.delegate = self
         endpointTableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: "cell")
         
-        let rightButton: UIBarButtonItem! = UIBarButtonItem(title: "LOAD", style: UIBarButtonItemStyle.plain, target: self, action: #selector(EndpointsViewController.refresh))
+        let rightButton: UIBarButtonItem! = UIBarButtonItem(title: "LOAD", style: UIBarButtonItem.Style.plain, target: self, action: #selector(EndpointsViewController.refresh))
         navigationItem.rightBarButtonItem = rightButton
         navigationController?.navigationBar.isTranslucent = false
+        
+        refresh()
     }
     
-    func refresh() {
+    @objc func refresh() {
         describer.fetchEndpoints( { (error) -> Void in
             DispatchQueue.main.async(execute: { () -> Void in
                 if error == nil {
                     self.endpointTableView.reloadData()
                 } else {
-                    let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: error.debugDescription, delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertController(title: "Something went wrong", message: error.debugDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+                        alert.dismiss(animated: true, completion: nil)
+                    }))
                     alert.show();
                 }
             })
@@ -71,13 +76,13 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
         self.endpointTableView.deselectRow(at: indexPath, animated: true)
         let endpoint: Endpoint = (describer.device?.endpoints?[indexPath.row])!
         if let endpointOptions = endpoint.options {
-            if let options = endpointOptions.options {
+            if let options = endpointOptions.values {
                 if options.count == 1 {
                     execute(endpoint: endpoint, option: options[0])
                 }else{
-                    let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
+                    let alert: UIAlertController = UIAlertController(title: endpoint.name, message: "", preferredStyle: UIAlertController.Style.actionSheet)
                     for option in options {
-                        let action: UIAlertAction = UIAlertAction(title: option.name, style: UIAlertActionStyle.default, handler: { (action) -> Void in
+                        let action: UIAlertAction = UIAlertAction(title: option.name ?? "", style: UIAlertAction.Style.default, handler: { (action) -> Void in
                             self.execute(endpoint: endpoint, option: option)
                         })
                         alert.addAction(action)
@@ -95,7 +100,10 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
         if let device = self.describer.device {
             endpoint.execute(host: device.host!, namespace: device.hostNamespace!, option: option) { (success) in
                 if !success {
-                    let alert: UIAlertView! = UIAlertView(title: "Something went wrong", message: "Ruh roh", delegate: self, cancelButtonTitle: "OK")
+                    let alert = UIAlertController(title: "Something went wrong", message: "Ruh roh", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+                        alert.dismiss(animated: true, completion: nil)
+                    }))
                     alert.show();
                 }
             }

@@ -9,25 +9,39 @@
 /* Begin PBXBuildFile section */
 		0193A7B4CF0F857CF6463D2A /* Pods_Roost_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099767B8A80F3A41A2F28303 /* Pods_Roost_RemoteTests.framework */; };
 		49333D6B1B37517E00DA154F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49333D6A1B37517E00DA154F /* UIColor.swift */; };
+		4969F5C620FE7EF900888360 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C520FE7EF900888360 /* DeviceViewModel.swift */; };
+		4969F5CA20FEADB400888360 /* GetEndpointsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C920FEADB400888360 /* GetEndpointsCall.swift */; };
+		4969F5CC20FEB36200888360 /* GetDeviceTypeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */; };
+		4969F5D321003A0000888360 /* GetPlacesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B720FD7754005FFE2D /* GetPlacesCall.swift */; };
+		4969F5D421003A0000888360 /* GetDevicesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B920FD7776005FFE2D /* GetDevicesCall.swift */; };
+		4969F5D521003A0000888360 /* GetDeviceTypeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */; };
+		4969F5D621003A0600888360 /* RRServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B420FD76FE005FFE2D /* RRServerConfig.swift */; };
 		496FE7041E4F893D00F4EAA9 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */; };
 		496FE7051E4F893D00F4EAA9 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496FE7031E4F893D00F4EAA9 /* DevicesViewController.xib */; };
 		496FE7071E4F8C6A00F4EAA9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7061E4F8C6A00F4EAA9 /* Device.swift */; };
 		496FE7091E4F983B00F4EAA9 /* DeviceDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */; };
-		496FE70B1E4F9E4300F4EAA9 /* EndpointArrayDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE70A1E4F9E4300F4EAA9 /* EndpointArrayDeserializer.swift */; };
-		496FE70D1E4FB5AF00F4EAA9 /* NumberEndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE70C1E4FB5AF00F4EAA9 /* NumberEndpointOption.swift */; };
-		496FE70F1E4FB63B00F4EAA9 /* StringEndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE70E1E4FB63B00F4EAA9 /* StringEndpointOption.swift */; };
-		496FE7111E4FB65D00F4EAA9 /* DictionaryEndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7101E4FB65D00F4EAA9 /* DictionaryEndpointOption.swift */; };
-		496FE7131E4FB6D100F4EAA9 /* EndpointOptionDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7121E4FB6D100F4EAA9 /* EndpointOptionDeserializer.swift */; };
 		496FE7151E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */; };
 		496FE7171E4FC51000F4EAA9 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7161E4FC51000F4EAA9 /* DetailsTableViewCell.swift */; };
 		4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
 		4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
+		4992A97A20FD75DF00AF567E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992A97820FD75DF00AF567E /* SplashViewController.swift */; };
+		4992A97B20FD75DF00AF567E /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4992A97920FD75DF00AF567E /* SplashViewController.xib */; };
+		4992A97F20FD760000AF567E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992A97D20FD760000AF567E /* LoginViewController.swift */; };
+		4992A98020FD760000AF567E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4992A97E20FD760000AF567E /* LoginViewController.xib */; };
 		499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
 		499B5DC81B05AB1F00AD67BE /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
 		499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
 		499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
 		499B5DCD1B0637C000AD67BE /* index.json in Resources */ = {isa = PBXBuildFile; fileRef = 499B5DCC1B0637BF00AD67BE /* index.json */; };
 		499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */; };
+		49B235B020FD7642005FFE2D /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235AF20FD7642005FFE2D /* AuthResponse.swift */; };
+		49B235B320FD76C2005FFE2D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B220FD76C2005FFE2D /* Place.swift */; };
+		49B235B520FD76FE005FFE2D /* RRServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B420FD76FE005FFE2D /* RRServerConfig.swift */; };
+		49B235B820FD7754005FFE2D /* GetPlacesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B720FD7754005FFE2D /* GetPlacesCall.swift */; };
+		49B235BA20FD7776005FFE2D /* GetDevicesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B920FD7776005FFE2D /* GetDevicesCall.swift */; };
+		49B235BC20FD77B5005FFE2D /* DeviceTableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235BB20FD77B5005FFE2D /* DeviceTableItem.swift */; };
+		49B235BF20FD78C6005FFE2D /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235BE20FD78C6005FFE2D /* PlaceViewModel.swift */; };
+		49B235C220FD7919005FFE2D /* AppInitFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235C120FD7919005FFE2D /* AppInitFlowController.swift */; };
 		49C1B7A01B11594800F109C3 /* EndpointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */; };
 		49C1B7A11B11594800F109C3 /* EndpointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */; };
 		49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */; };
@@ -39,8 +53,6 @@
 		49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */; };
 		49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
 		49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
-		49ED29201C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */; };
-		49ED29211C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */; };
 		510F8E3A85610C2AC30EFFC6 /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,24 +72,34 @@
 		11C24746A4631C51189B6B44 /* Pods-Roost Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roost_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49333D6A1B37517E00DA154F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4969F5C520FE7EF900888360 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		4969F5C920FEADB400888360 /* GetEndpointsCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEndpointsCall.swift; sourceTree = "<group>"; };
+		4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceTypeCall.swift; sourceTree = "<group>"; };
 		496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		496FE7031E4F893D00F4EAA9 /* DevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
 		496FE7061E4F8C6A00F4EAA9 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDescription.swift; sourceTree = "<group>"; };
-		496FE70A1E4F9E4300F4EAA9 /* EndpointArrayDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointArrayDeserializer.swift; sourceTree = "<group>"; };
-		496FE70C1E4FB5AF00F4EAA9 /* NumberEndpointOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberEndpointOption.swift; sourceTree = "<group>"; };
-		496FE70E1E4FB63B00F4EAA9 /* StringEndpointOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringEndpointOption.swift; sourceTree = "<group>"; };
-		496FE7101E4FB65D00F4EAA9 /* DictionaryEndpointOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryEndpointOption.swift; sourceTree = "<group>"; };
-		496FE7121E4FB6D100F4EAA9 /* EndpointOptionDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionDeserializer.swift; sourceTree = "<group>"; };
 		496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionProtocol.swift; sourceTree = "<group>"; };
 		496FE7161E4FC51000F4EAA9 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		4974F6FB1AFAC5E200816CF8 /* Roost Remote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roost Remote-Bridging-Header.h"; sourceTree = "<group>"; };
 		4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkCall.swift; sourceTree = "<group>"; };
+		4992A97820FD75DF00AF567E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4992A97920FD75DF00AF567E /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		4992A97D20FD760000AF567E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4992A97E20FD760000AF567E /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOption.swift; sourceTree = "<group>"; };
 		499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolder.swift; sourceTree = "<group>"; };
 		499B5DCC1B0637BF00AD67BE /* index.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = index.json; sourceTree = "<group>"; };
 		499B5DCE1B06388C00AD67BE /* EndpointManagerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointManagerSpecs.swift; sourceTree = "<group>"; };
+		49B235AF20FD7642005FFE2D /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		49B235B220FD76C2005FFE2D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		49B235B420FD76FE005FFE2D /* RRServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRServerConfig.swift; sourceTree = "<group>"; };
+		49B235B720FD7754005FFE2D /* GetPlacesCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesCall.swift; sourceTree = "<group>"; };
+		49B235B920FD7776005FFE2D /* GetDevicesCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDevicesCall.swift; sourceTree = "<group>"; };
+		49B235BB20FD77B5005FFE2D /* DeviceTableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableItem.swift; sourceTree = "<group>"; };
+		49B235BE20FD78C6005FFE2D /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		49B235C120FD7919005FFE2D /* AppInitFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitFlowController.swift; sourceTree = "<group>"; };
 		49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTableViewCell.swift; sourceTree = "<group>"; };
 		49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EndpointTableViewCell.xib; sourceTree = "<group>"; };
 		49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointsViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +113,6 @@
 		49CD55EF1AF8685900673328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
 		49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderSpec.swift; sourceTree = "<group>"; };
-		49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionHolderDeserializer.swift; sourceTree = "<group>"; };
 		71320FE0028392A072608406 /* Pods-Roost Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.release.xcconfig"; sourceTree = "<group>"; };
 		C4D5A6E1B511B46036AD174A /* Pods-Roost RemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,12 +137,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49188762224FF68600444CB9 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				49B235BB20FD77B5005FFE2D /* DeviceTableItem.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
 		4974F7011AFACBF400816CF8 /* Network Calls */ = {
 			isa = PBXGroup;
 			children = (
+				49B235B420FD76FE005FFE2D /* RRServerConfig.swift */,
+				49B235B720FD7754005FFE2D /* GetPlacesCall.swift */,
+				49B235B920FD7776005FFE2D /* GetDevicesCall.swift */,
+				4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */,
 				4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */,
 			);
 			name = "Network Calls";
+			sourceTree = "<group>";
+		};
+		4992A97C20FD75E800AF567E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4992A97820FD75DF00AF567E /* SplashViewController.swift */,
+				4992A97920FD75DF00AF567E /* SplashViewController.xib */,
+				4992A97D20FD760000AF567E /* LoginViewController.swift */,
+				4992A97E20FD760000AF567E /* LoginViewController.xib */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		4992A98120FD760800AF567E /* THUX */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = THUX;
+			sourceTree = "<group>";
+		};
+		49B235B120FD765A005FFE2D /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				49B235AF20FD7642005FFE2D /* AuthResponse.swift */,
+				496FE7061E4F8C6A00F4EAA9 /* Device.swift */,
+				49B235B220FD76C2005FFE2D /* Place.swift */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		49B235BD20FD78B1005FFE2D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B235BE20FD78C6005FFE2D /* PlaceViewModel.swift */,
+				4969F5C520FE7EF900888360 /* DeviceViewModel.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		49B235C020FD78FD005FFE2D /* Flow Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49B235C120FD7919005FFE2D /* AppInitFlowController.swift */,
+			);
+			name = "Flow Controllers";
 			sourceTree = "<group>";
 		};
 		49C1B79D1B1158B400F109C3 /* Views */ = {
@@ -157,6 +235,7 @@
 		49CD55D71AF8685900673328 /* Roost Remote */ = {
 			isa = PBXGroup;
 			children = (
+				4992A98120FD760800AF567E /* THUX */,
 				49CD55DA1AF8685900673328 /* AppDelegate.swift */,
 				49C1B79D1B1158B400F109C3 /* Views */,
 				49CD55FE1AF868F200673328 /* Controllers */,
@@ -201,6 +280,7 @@
 		49CD55FE1AF868F200673328 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4992A97C20FD75E800AF567E /* Auth */,
 				49C1B7A21B116B8F00F109C3 /* EndpointsViewController.swift */,
 				49C1B7A31B116B8F00F109C3 /* EndpointsViewController.xib */,
 				496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */,
@@ -212,19 +292,17 @@
 		49CD55FF1AF8694400673328 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49188762224FF68600444CB9 /* Items */,
+				49B235C020FD78FD005FFE2D /* Flow Controllers */,
+				49B235BD20FD78B1005FFE2D /* View Models */,
+				49B235B120FD765A005FFE2D /* Server */,
 				496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */,
-				496FE7061E4F8C6A00F4EAA9 /* Device.swift */,
 				4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */,
+				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
 				496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */,
 				499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */,
-				496FE70C1E4FB5AF00F4EAA9 /* NumberEndpointOption.swift */,
-				496FE70E1E4FB63B00F4EAA9 /* StringEndpointOption.swift */,
-				496FE7101E4FB65D00F4EAA9 /* DictionaryEndpointOption.swift */,
-				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
+				4969F5C920FEADB400888360 /* GetEndpointsCall.swift */,
 				49333D6A1B37517E00DA154F /* UIColor.swift */,
-				496FE7121E4FB6D100F4EAA9 /* EndpointOptionDeserializer.swift */,
-				49ED291F1C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift */,
-				496FE70A1E4F9E4300F4EAA9 /* EndpointArrayDeserializer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -261,7 +339,6 @@
 				49CD55D21AF8685900673328 /* Frameworks */,
 				49CD55D31AF8685900673328 /* Resources */,
 				A14DCD1166ED8A3727BB3CDC /* [CP] Embed Pods Frameworks */,
-				D31F34701164981166C44FCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,7 +358,6 @@
 				49CD55E71AF8685900673328 /* Frameworks */,
 				49CD55E81AF8685900673328 /* Resources */,
 				4930994482BA3CCE8E901B7F /* [CP] Embed Pods Frameworks */,
-				963CC50A5D436DB9CDE8EC9A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,12 +377,12 @@
 			attributes = {
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Elliot Schrock";
 				TargetAttributes = {
 					49CD55D41AF8685900673328 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = PE7EQ66NRS;
+						DevelopmentTeam = HK6WSAR793;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -323,6 +399,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,9 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */,
+				4992A97B20FD75DF00AF567E /* SplashViewController.xib in Resources */,
 				49C1B7A11B11594800F109C3 /* EndpointTableViewCell.xib in Resources */,
 				49CD55E21AF8685900673328 /* Images.xcassets in Resources */,
 				496FE7051E4F893D00F4EAA9 /* DevicesViewController.xib in Resources */,
+				4992A98020FD760000AF567E /* LoginViewController.xib in Resources */,
 				49C1B7A51B116B8F00F109C3 /* EndpointsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,13 +446,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roost Remote-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4930994482BA3CCE8E901B7F /* [CP] Embed Pods Frameworks */ = {
@@ -382,28 +464,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nocilla/Nocilla.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nocilla.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		963CC50A5D436DB9CDE8EC9A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A14DCD1166ED8A3727BB3CDC /* [CP] Embed Pods Frameworks */ = {
@@ -412,28 +486,40 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FunkyNetwork/FunkyNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiModelTableViewDataSource/MultiModelTableViewDataSource.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Prelude/Prelude.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSPullToRefresh/SSPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ThryvUXComponents/ThryvUXComponents.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunkyNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601DateFormatter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiModelTableViewDataSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Prelude.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ThryvUXComponents.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D31F34701164981166C44FCC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1D4706F8F0907EF58ACC98C /* [CP] Check Pods Manifest.lock */ = {
@@ -442,13 +528,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Roost RemoteTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -458,25 +547,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4969F5CC20FEB36200888360 /* GetDeviceTypeCall.swift in Sources */,
+				49B235B320FD76C2005FFE2D /* Place.swift in Sources */,
+				4992A97F20FD760000AF567E /* LoginViewController.swift in Sources */,
 				496FE7071E4F8C6A00F4EAA9 /* Device.swift in Sources */,
 				4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */,
 				499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
 				49C1B7A01B11594800F109C3 /* EndpointTableViewCell.swift in Sources */,
-				496FE70F1E4FB63B00F4EAA9 /* StringEndpointOption.swift in Sources */,
 				496FE7041E4F893D00F4EAA9 /* DevicesViewController.swift in Sources */,
+				49B235B520FD76FE005FFE2D /* RRServerConfig.swift in Sources */,
+				49B235C220FD7919005FFE2D /* AppInitFlowController.swift in Sources */,
 				496FE7171E4FC51000F4EAA9 /* DetailsTableViewCell.swift in Sources */,
+				49B235BA20FD7776005FFE2D /* GetDevicesCall.swift in Sources */,
+				49B235B820FD7754005FFE2D /* GetPlacesCall.swift in Sources */,
+				4969F5CA20FEADB400888360 /* GetEndpointsCall.swift in Sources */,
+				49B235BF20FD78C6005FFE2D /* PlaceViewModel.swift in Sources */,
+				49B235B020FD7642005FFE2D /* AuthResponse.swift in Sources */,
 				496FE7151E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift in Sources */,
-				496FE7111E4FB65D00F4EAA9 /* DictionaryEndpointOption.swift in Sources */,
 				496FE7091E4F983B00F4EAA9 /* DeviceDescription.swift in Sources */,
+				4969F5C620FE7EF900888360 /* DeviceViewModel.swift in Sources */,
+				49B235BC20FD77B5005FFE2D /* DeviceTableItem.swift in Sources */,
 				49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */,
-				496FE70D1E4FB5AF00F4EAA9 /* NumberEndpointOption.swift in Sources */,
-				496FE70B1E4F9E4300F4EAA9 /* EndpointArrayDeserializer.swift in Sources */,
 				49333D6B1B37517E00DA154F /* UIColor.swift in Sources */,
-				49ED29201C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */,
 				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
 				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
-				496FE7131E4FB6D100F4EAA9 /* EndpointOptionDeserializer.swift in Sources */,
 				499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
+				4992A97A20FD75DF00AF567E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,13 +580,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4969F5D521003A0000888360 /* GetDeviceTypeCall.swift in Sources */,
 				499B5DC81B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
 				49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */,
+				4969F5D321003A0000888360 /* GetPlacesCall.swift in Sources */,
 				49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */,
 				49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */,
+				4969F5D421003A0000888360 /* GetDevicesCall.swift in Sources */,
 				499B5DCF1B06388C00AD67BE /* EndpointManagerSpecs.swift in Sources */,
+				4969F5D621003A0600888360 /* RRServerConfig.swift in Sources */,
 				499B5DCB1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
-				49ED29211C9528A9003E4C74 /* EndpointOptionHolderDeserializer.swift in Sources */,
 				49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,14 +624,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -557,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
@@ -574,14 +681,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -599,7 +714,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SDKROOT = iphoneos;
@@ -618,9 +733,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Todd Elliot Schrock (RY2U2EZS76)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PE7EQ66NRS;
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,7 +743,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -642,16 +757,16 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PE7EQ66NRS;
+				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -675,7 +790,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote.app/Roost Remote";
 			};
 			name = Debug;
@@ -696,7 +811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote.app/Roost Remote";
 			};
 			name = Release;

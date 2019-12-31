@@ -7,17 +7,16 @@
 //
 
 import UIKit
-import Eson
 
-class Endpoint: NSObject {
+class Endpoint: Decodable {
     var name: String = ""
     var endpoint: String = ""
     var method: String = ""
     var options: EndpointOptionHolder?
     
-    func execute(host: String, namespace: String, option: EndpointOption, _ completion: @escaping ((Bool) -> Void)) {
+    func execute(host: String, namespace: String, option: EndpointOptionProtocol, _ completion: @escaping ((Bool) -> Void)) {
         do {
-            var json = [self.options!.name : option.endpointOption()]
+            var json = [self.options!.key : option.endpointOption()]
             if let staticValues = self.options?.staticValues {
                 for value in staticValues {
                     json[value.name] = value.endpointOption()

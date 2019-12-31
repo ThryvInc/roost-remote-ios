@@ -7,15 +7,9 @@
 //
 
 import UIKit
-import Eson
 
-open class EndpointOptionHolder: NSObject, EsonKeyMapper {
-    var name: String!
+open class EndpointOptionHolder: Decodable {
+    var key: String!
     var staticValues: [EndpointOption]?
-    var options: [EndpointOption]?
-    
-    open class func esonPropertyNameToKeyMap() -> [String : String] {
-        return ["name":"key","options":"values"]
-    }
-   
+    var values: [EndpointOption]?
 }

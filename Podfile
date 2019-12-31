@@ -1,12 +1,12 @@
-platform :ios, '8.0'
+platform :ios, '10.0'
 use_frameworks!
 
 target 'Roost Remote' do
-    pod 'Eson', :git => 'https://github.com/schrockblock/eson'
+    pod 'ThryvUXComponents', git: 'https://github.com/ThryvInc/thryv-ux-components'
+    pod 'SDWebImage'
 end
 
 target 'Roost RemoteTests' do
-    pod 'Eson', :git => 'https://github.com/schrockblock/eson'
     pod 'Quick'
     pod 'Nimble'
     pod 'Nocilla'

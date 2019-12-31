@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainFont = UIFont(name: "AvenirNext-DemiBold", size: 20)!
         let buttonFont = UIFont(name: "AvenirNext-DemiBold", size: 17)!
@@ -22,16 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
         
         UINavigationBar.appearance().barTintColor = UIColor.navBgColor()
-        UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : mainFont, NSForegroundColorAttributeName : UIColor.navTextColor()]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : mainFont, NSAttributedString.Key.foregroundColor : UIColor.navTextColor()]
         
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName : buttonFont], for: UIControlState())
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : buttonFont], for: UIControl.State())
         UIBarButtonItem.appearance().tintColor = UIColor.navHighlightColor()
         
         UITableView.appearance().backgroundColor = UIColor.tableBgColor()
         
-        let devicesVC = DevicesViewController(nibName: "DevicesViewController", bundle: nil)
-        let navVC = UINavigationController(rootViewController: devicesVC)
-        window?.rootViewController = navVC;
+        let splashVC = SplashViewController(nibName: "SplashViewController", bundle: nil)
+        window?.rootViewController = splashVC;
         window?.makeKeyAndVisible()
         return true
     }

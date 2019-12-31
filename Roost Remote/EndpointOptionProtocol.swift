@@ -9,5 +9,5 @@
 import UIKit
 
 protocol EndpointOptionProtocol {
-    func endpointOption() -> AnyObject?
+    func endpointOption() -> Decodable?
 }
