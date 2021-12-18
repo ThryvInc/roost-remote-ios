@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import FunkyNetwork
-
-class GetEndpointsCall: JsonNetworkCall {
-
-}
+//import FunkyNetwork
+//
+//class GetEndpointsCall: JsonNetworkCall {
+//
+//}

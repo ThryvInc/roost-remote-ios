@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Device: NSObject, Decodable {
+struct Device: Decodable {
     var name: String?
     var host: String?
     var hostNamespace: String?

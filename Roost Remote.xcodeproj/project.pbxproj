@@ -8,7 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0193A7B4CF0F857CF6463D2A /* Pods_Roost_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099767B8A80F3A41A2F28303 /* Pods_Roost_RemoteTests.framework */; };
+		4922AF0723BAF69C0019C720 /* CreateSessionCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0623BAF69C0019C720 /* CreateSessionCall.swift */; };
+		4922AF0923BB01670019C720 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0823BB01670019C720 /* Auth.swift */; };
+		4922AF0B23BB04380019C720 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0A23BB04380019C720 /* BaseNetworkCall.swift */; };
+		4922AF0D23BB17BC0019C720 /* LocalCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0C23BB17BC0019C720 /* LocalCall.swift */; };
+		4922AF0F23BBCBDF0019C720 /* DevicesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0E23BBCBDF0019C720 /* DevicesFlowCoordinator.swift */; };
+		4922AF1123BBD2EA0019C720 /* AuthedFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1023BBD2EA0019C720 /* AuthedFlowCoordinator.swift */; };
+		4922AF1323BBD4FD0019C720 /* BatchesFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1223BBD4FD0019C720 /* BatchesFlowCoordinator.swift */; };
+		4922AF1523BBD5120019C720 /* TabsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1423BBD5120019C720 /* TabsFlowCoordinator.swift */; };
+		4922AF1A23BBD5E10019C720 /* CreateBatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1823BBD5E10019C720 /* CreateBatchViewController.swift */; };
+		4922AF1B23BBD5E10019C720 /* CreateBatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4922AF1923BBD5E10019C720 /* CreateBatchViewController.xib */; };
+		4922AF1D23BBDEE50019C720 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1C23BBDEE50019C720 /* Flow.swift */; };
+		4922AF1F23BBE3520019C720 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1E23BBE3520019C720 /* Task.swift */; };
+		4922AF2123BBE35E0019C720 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF2023BBE35E0019C720 /* Trigger.swift */; };
 		49333D6B1B37517E00DA154F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49333D6A1B37517E00DA154F /* UIColor.swift */; };
+		493692F823BE391000ADC278 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493692F723BE391000ADC278 /* Styles.swift */; };
+		493692FA23BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493692F923BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift */; };
+		493D44F423C506A4008D1BD5 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F323C506A4008D1BD5 /* Descriptions.swift */; };
+		493D44F723C5706C008D1BD5 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F523C5706C008D1BD5 /* AlarmTableViewCell.swift */; };
+		493D44F823C5706C008D1BD5 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D44F623C5706C008D1BD5 /* AlarmTableViewCell.xib */; };
 		4969F5C620FE7EF900888360 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C520FE7EF900888360 /* DeviceViewModel.swift */; };
 		4969F5CA20FEADB400888360 /* GetEndpointsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C920FEADB400888360 /* GetEndpointsCall.swift */; };
 		4969F5CC20FEB36200888360 /* GetDeviceTypeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */; };
@@ -19,11 +37,9 @@
 		496FE7041E4F893D00F4EAA9 /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */; };
 		496FE7051E4F893D00F4EAA9 /* DevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496FE7031E4F893D00F4EAA9 /* DevicesViewController.xib */; };
 		496FE7071E4F8C6A00F4EAA9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7061E4F8C6A00F4EAA9 /* Device.swift */; };
-		496FE7091E4F983B00F4EAA9 /* DeviceDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */; };
-		496FE7151E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */; };
+		496FE7091E4F983B00F4EAA9 /* DeviceDescriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7081E4F983B00F4EAA9 /* DeviceDescriber.swift */; };
 		496FE7171E4FC51000F4EAA9 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7161E4FC51000F4EAA9 /* DetailsTableViewCell.swift */; };
 		4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
-		4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
 		4992A97A20FD75DF00AF567E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992A97820FD75DF00AF567E /* SplashViewController.swift */; };
 		4992A97B20FD75DF00AF567E /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4992A97920FD75DF00AF567E /* SplashViewController.xib */; };
 		4992A97F20FD760000AF567E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992A97D20FD760000AF567E /* LoginViewController.swift */; };
@@ -52,7 +68,6 @@
 		49E5641D1B064ACE009D3A7A /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641C1B064ACE009D3A7A /* EndpointSpec.swift */; };
 		49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5641E1B064E99009D3A7A /* EndpointOptionHolderSpec.swift */; };
 		49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
-		49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */; };
 		510F8E3A85610C2AC30EFFC6 /* Pods_Roost_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,19 +86,35 @@
 		0E478FB2AA4AF8325C8E0AFC /* Pods-Roost RemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost RemoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost RemoteTests/Pods-Roost RemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		11C24746A4631C51189B6B44 /* Pods-Roost Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roost Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roost Remote/Pods-Roost Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roost_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4922AF0623BAF69C0019C720 /* CreateSessionCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionCall.swift; sourceTree = "<group>"; };
+		4922AF0823BB01670019C720 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		4922AF0A23BB04380019C720 /* BaseNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkCall.swift; sourceTree = "<group>"; };
+		4922AF0C23BB17BC0019C720 /* LocalCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCall.swift; sourceTree = "<group>"; };
+		4922AF0E23BBCBDF0019C720 /* DevicesFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesFlowCoordinator.swift; sourceTree = "<group>"; };
+		4922AF1023BBD2EA0019C720 /* AuthedFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthedFlowCoordinator.swift; sourceTree = "<group>"; };
+		4922AF1223BBD4FD0019C720 /* BatchesFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchesFlowCoordinator.swift; sourceTree = "<group>"; };
+		4922AF1423BBD5120019C720 /* TabsFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsFlowCoordinator.swift; sourceTree = "<group>"; };
+		4922AF1823BBD5E10019C720 /* CreateBatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBatchViewController.swift; sourceTree = "<group>"; };
+		4922AF1923BBD5E10019C720 /* CreateBatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBatchViewController.xib; sourceTree = "<group>"; };
+		4922AF1C23BBDEE50019C720 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		4922AF1E23BBE3520019C720 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4922AF2023BBE35E0019C720 /* Trigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
 		49333D6A1B37517E00DA154F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		493692F723BE391000ADC278 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		493692F923BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTapDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		493D44F323C506A4008D1BD5 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
+		493D44F523C5706C008D1BD5 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		493D44F623C5706C008D1BD5 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		4969F5C520FE7EF900888360 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		4969F5C920FEADB400888360 /* GetEndpointsCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEndpointsCall.swift; sourceTree = "<group>"; };
 		4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceTypeCall.swift; sourceTree = "<group>"; };
 		496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesViewController.swift; sourceTree = "<group>"; };
 		496FE7031E4F893D00F4EAA9 /* DevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevicesViewController.xib; sourceTree = "<group>"; };
 		496FE7061E4F8C6A00F4EAA9 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDescription.swift; sourceTree = "<group>"; };
-		496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointOptionProtocol.swift; sourceTree = "<group>"; };
+		496FE7081E4F983B00F4EAA9 /* DeviceDescriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDescriber.swift; sourceTree = "<group>"; };
 		496FE7161E4FC51000F4EAA9 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		4974F6FB1AFAC5E200816CF8 /* Roost Remote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Roost Remote-Bridging-Header.h"; sourceTree = "<group>"; };
 		4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkCall.swift; sourceTree = "<group>"; };
 		4992A97820FD75DF00AF567E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4992A97920FD75DF00AF567E /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		4992A97D20FD760000AF567E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -148,11 +179,14 @@
 		4974F7011AFACBF400816CF8 /* Network Calls */ = {
 			isa = PBXGroup;
 			children = (
+				4922AF0A23BB04380019C720 /* BaseNetworkCall.swift */,
 				49B235B420FD76FE005FFE2D /* RRServerConfig.swift */,
+				4922AF0623BAF69C0019C720 /* CreateSessionCall.swift */,
+				4922AF0C23BB17BC0019C720 /* LocalCall.swift */,
 				49B235B720FD7754005FFE2D /* GetPlacesCall.swift */,
 				49B235B920FD7776005FFE2D /* GetDevicesCall.swift */,
+				4969F5C920FEADB400888360 /* GetEndpointsCall.swift */,
 				4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */,
-				4974F7021AFADF0200816CF8 /* BaseNetworkCall.swift */,
 			);
 			name = "Network Calls";
 			sourceTree = "<group>";
@@ -166,13 +200,6 @@
 				4992A97E20FD760000AF567E /* LoginViewController.xib */,
 			);
 			name = Auth;
-			sourceTree = "<group>";
-		};
-		4992A98120FD760800AF567E /* THUX */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = THUX;
 			sourceTree = "<group>";
 		};
 		49B235B120FD765A005FFE2D /* Server */ = {
@@ -198,6 +225,10 @@
 			isa = PBXGroup;
 			children = (
 				49B235C120FD7919005FFE2D /* AppInitFlowController.swift */,
+				4922AF1023BBD2EA0019C720 /* AuthedFlowCoordinator.swift */,
+				4922AF1423BBD5120019C720 /* TabsFlowCoordinator.swift */,
+				4922AF0E23BBCBDF0019C720 /* DevicesFlowCoordinator.swift */,
+				4922AF1223BBD4FD0019C720 /* BatchesFlowCoordinator.swift */,
 			);
 			name = "Flow Controllers";
 			sourceTree = "<group>";
@@ -205,9 +236,13 @@
 		49C1B79D1B1158B400F109C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				493692F723BE391000ADC278 /* Styles.swift */,
 				49C1B79E1B11594800F109C3 /* EndpointTableViewCell.swift */,
 				49C1B79F1B11594800F109C3 /* EndpointTableViewCell.xib */,
 				496FE7161E4FC51000F4EAA9 /* DetailsTableViewCell.swift */,
+				493692F923BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift */,
+				493D44F523C5706C008D1BD5 /* AlarmTableViewCell.swift */,
+				493D44F623C5706C008D1BD5 /* AlarmTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -235,7 +270,6 @@
 		49CD55D71AF8685900673328 /* Roost Remote */ = {
 			isa = PBXGroup;
 			children = (
-				4992A98120FD760800AF567E /* THUX */,
 				49CD55DA1AF8685900673328 /* AppDelegate.swift */,
 				49C1B79D1B1158B400F109C3 /* Views */,
 				49CD55FE1AF868F200673328 /* Controllers */,
@@ -285,6 +319,8 @@
 				49C1B7A31B116B8F00F109C3 /* EndpointsViewController.xib */,
 				496FE7021E4F893D00F4EAA9 /* DevicesViewController.swift */,
 				496FE7031E4F893D00F4EAA9 /* DevicesViewController.xib */,
+				4922AF1823BBD5E10019C720 /* CreateBatchViewController.swift */,
+				4922AF1923BBD5E10019C720 /* CreateBatchViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -296,13 +332,16 @@
 				49B235C020FD78FD005FFE2D /* Flow Controllers */,
 				49B235BD20FD78B1005FFE2D /* View Models */,
 				49B235B120FD765A005FFE2D /* Server */,
-				496FE7081E4F983B00F4EAA9 /* DeviceDescription.swift */,
+				4922AF0823BB01670019C720 /* Auth.swift */,
+				493D44F323C506A4008D1BD5 /* Descriptions.swift */,
+				496FE7081E4F983B00F4EAA9 /* DeviceDescriber.swift */,
 				4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */,
 				499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */,
-				496FE7141E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift */,
 				499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */,
-				4969F5C920FEADB400888360 /* GetEndpointsCall.swift */,
 				49333D6A1B37517E00DA154F /* UIColor.swift */,
+				4922AF1C23BBDEE50019C720 /* Flow.swift */,
+				4922AF1E23BBE3520019C720 /* Task.swift */,
+				4922AF2023BBE35E0019C720 /* Trigger.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -422,6 +461,8 @@
 				49CD55E51AF8685900673328 /* LaunchScreen.xib in Resources */,
 				4992A97B20FD75DF00AF567E /* SplashViewController.xib in Resources */,
 				49C1B7A11B11594800F109C3 /* EndpointTableViewCell.xib in Resources */,
+				4922AF1B23BBD5E10019C720 /* CreateBatchViewController.xib in Resources */,
+				493D44F823C5706C008D1BD5 /* AlarmTableViewCell.xib in Resources */,
 				49CD55E21AF8685900673328 /* Images.xcassets in Resources */,
 				496FE7051E4F893D00F4EAA9 /* DevicesViewController.xib in Resources */,
 				4992A98020FD760000AF567E /* LoginViewController.xib in Resources */,
@@ -487,35 +528,31 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Roost Remote/Pods-Roost Remote-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FunkyNetwork/FunkyNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/FunNet/FunNet.framework",
 				"${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework",
+				"${BUILT_PRODUCTS_DIR}/LUX/LUX.framework",
+				"${BUILT_PRODUCTS_DIR}/LithoOperators/LithoOperators.framework",
 				"${BUILT_PRODUCTS_DIR}/MultiModelTableViewDataSource/MultiModelTableViewDataSource.framework",
 				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/PlaygroundVCHelpers/PlaygroundVCHelpers.framework",
 				"${BUILT_PRODUCTS_DIR}/Prelude/Prelude.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSPullToRefresh/SSPullToRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/ThryvUXComponents/ThryvUXComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/THUXAuth/THUXAuth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunkyNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunNet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601DateFormatter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LUX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LithoOperators.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiModelTableViewDataSource.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlaygroundVCHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Prelude.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSPullToRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ThryvUXComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/THUXAuth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -550,8 +587,8 @@
 				4969F5CC20FEB36200888360 /* GetDeviceTypeCall.swift in Sources */,
 				49B235B320FD76C2005FFE2D /* Place.swift in Sources */,
 				4992A97F20FD760000AF567E /* LoginViewController.swift in Sources */,
+				493D44F423C506A4008D1BD5 /* Descriptions.swift in Sources */,
 				496FE7071E4F8C6A00F4EAA9 /* Device.swift in Sources */,
-				4974F7031AFADF0200816CF8 /* BaseNetworkCall.swift in Sources */,
 				499B5DC71B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
 				49C1B7A01B11594800F109C3 /* EndpointTableViewCell.swift in Sources */,
 				496FE7041E4F893D00F4EAA9 /* DevicesViewController.swift in Sources */,
@@ -559,19 +596,33 @@
 				49B235C220FD7919005FFE2D /* AppInitFlowController.swift in Sources */,
 				496FE7171E4FC51000F4EAA9 /* DetailsTableViewCell.swift in Sources */,
 				49B235BA20FD7776005FFE2D /* GetDevicesCall.swift in Sources */,
+				4922AF2123BBE35E0019C720 /* Trigger.swift in Sources */,
 				49B235B820FD7754005FFE2D /* GetPlacesCall.swift in Sources */,
 				4969F5CA20FEADB400888360 /* GetEndpointsCall.swift in Sources */,
+				493692F823BE391000ADC278 /* Styles.swift in Sources */,
+				4922AF1323BBD4FD0019C720 /* BatchesFlowCoordinator.swift in Sources */,
+				4922AF0B23BB04380019C720 /* BaseNetworkCall.swift in Sources */,
+				4922AF0723BAF69C0019C720 /* CreateSessionCall.swift in Sources */,
+				4922AF1F23BBE3520019C720 /* Task.swift in Sources */,
+				4922AF1D23BBDEE50019C720 /* Flow.swift in Sources */,
 				49B235BF20FD78C6005FFE2D /* PlaceViewModel.swift in Sources */,
 				49B235B020FD7642005FFE2D /* AuthResponse.swift in Sources */,
-				496FE7151E4FB92A00F4EAA9 /* EndpointOptionProtocol.swift in Sources */,
-				496FE7091E4F983B00F4EAA9 /* DeviceDescription.swift in Sources */,
+				4922AF0923BB01670019C720 /* Auth.swift in Sources */,
+				496FE7091E4F983B00F4EAA9 /* DeviceDescriber.swift in Sources */,
 				4969F5C620FE7EF900888360 /* DeviceViewModel.swift in Sources */,
 				49B235BC20FD77B5005FFE2D /* DeviceTableItem.swift in Sources */,
 				49C1B7A41B116B8F00F109C3 /* EndpointsViewController.swift in Sources */,
 				49333D6B1B37517E00DA154F /* UIColor.swift in Sources */,
+				493692FA23BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift in Sources */,
+				4922AF1523BBD5120019C720 /* TabsFlowCoordinator.swift in Sources */,
 				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
 				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
+				4922AF0F23BBCBDF0019C720 /* DevicesFlowCoordinator.swift in Sources */,
+				4922AF0D23BB17BC0019C720 /* LocalCall.swift in Sources */,
+				493D44F723C5706C008D1BD5 /* AlarmTableViewCell.swift in Sources */,
 				499B5DCA1B05AC2700AD67BE /* EndpointOptionHolder.swift in Sources */,
+				4922AF1A23BBD5E10019C720 /* CreateBatchViewController.swift in Sources */,
+				4922AF1123BBD2EA0019C720 /* AuthedFlowCoordinator.swift in Sources */,
 				4992A97A20FD75DF00AF567E /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,7 +633,6 @@
 			files = (
 				4969F5D521003A0000888360 /* GetDeviceTypeCall.swift in Sources */,
 				499B5DC81B05AB1F00AD67BE /* EndpointOption.swift in Sources */,
-				49E8560D1AFFD1C900E79527 /* BaseNetworkCall.swift in Sources */,
 				4969F5D321003A0000888360 /* GetPlacesCall.swift in Sources */,
 				49E8560C1AFFD1C100E79527 /* Endpoint.swift in Sources */,
 				49E5641F1B064E99009D3A7A /* EndpointOptionHolderSpec.swift in Sources */,
@@ -735,7 +785,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -744,6 +794,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -759,7 +810,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -767,6 +818,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Roost Remote/Roost Remote-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

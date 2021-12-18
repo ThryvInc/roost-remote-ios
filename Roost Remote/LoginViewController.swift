@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import ThryvUXComponents
+import LUX
+import Combine
 
-class LoginViewController: THUXLoginViewController {
-    var flowController: AppInitFlowController?
+class LoginViewController: LUXLoginViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +18,5 @@ class LoginViewController: THUXLoginViewController {
         title = "Login"
         
         loginButton?.layer.cornerRadius = (loginButton?.bounds.size.height ?? 10) / 2
-        
-        loginViewModel?.outputs.advanceAuthed.observeValues({ (_) in
-            let mainVC = DevicesViewController(nibName: "DevicesViewController", bundle: nil)
-            self.flowController?.configureMain(viewController: mainVC)
-            let navVC = UINavigationController(rootViewController: mainVC)
-            self.present(navVC, animated: true, completion: nil)
-        })
     }
 }

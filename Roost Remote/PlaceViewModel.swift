@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import ThryvUXComponents
+import LUX
 import MultiModelTableViewDataSource
 import Prelude
-import ReactiveSwift
+import FunNet
+import Combine
 
-class PlaceViewModel: THUXModelListViewModel<Device> {
-    let call: GetDevicesCall
+class PlaceViewModel: LUXModelListViewModel<Device> {
+    let call: CombineNetCall
     
     init(placeId: String) {
-        let devicesCall = GetDevicesCall(placeId: placeId)
-        self.call = devicesCall
+        self.call = getDevicesCall(placeId)
+        let modelPub: AnyPublisher<[Device], Never> = modelPublisher(from: call.responder!.$data.eraseToAnyPublisher())
         
-        super.init(modelsSignal: devicesCall.devicesSignal, modelToItem: DeviceTableItem.item)
+        super.init(modelsPublisher: modelPub, modelToItem: DeviceTableItem.item)
     }
 }

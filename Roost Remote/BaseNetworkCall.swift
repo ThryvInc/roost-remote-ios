@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseNetworkCall: NSObject {
+class BaseNetworkCall: NSObject, Codable {
     var hostName: String = "192.168.0.133:8081"
     let scheme: String = "http"
     var namespace: String = ""
@@ -26,8 +26,9 @@ class BaseNetworkCall: NSObject {
         }
         
         session.dataTask(with: request as URLRequest) { (data, response, error) in
-            completion(data, response as? HTTPURLResponse, error as? NSError)
-            return ()
+            DispatchQueue.main.async {
+                completion(data, response as? HTTPURLResponse, error as? NSError)
+            }
         }.resume();
     }
 }

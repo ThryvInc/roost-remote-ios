@@ -9,7 +9,7 @@
 import UIKit
 
 class EndpointsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    var describer: DeviceDescription!
+    var describer: DeviceDescriber!
     @IBOutlet var endpointTableView: UITableView!
     @IBOutlet weak var loadButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
@@ -44,7 +44,7 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
                         alert.dismiss(animated: true, completion: nil)
                     }))
-                    alert.show();
+                    self.present(alert, animated: true, completion: nil)
                 }
             })
         })
@@ -90,6 +90,10 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
                     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) -> Void in
                         alert.dismiss(animated: true, completion: { () -> Void in})
                     }))
+                    if let popover = alert.popoverPresentationController {
+                        popover.sourceView = tableView.cellForRow(at: indexPath)?.contentView
+                        popover.sourceRect = tableView.rectForRow(at: indexPath)
+                    }
                     self.present(alert, animated: true, completion: nil)
                 }
             }
@@ -98,15 +102,18 @@ class EndpointsViewController: UIViewController, UITableViewDataSource, UITableV
     
     func execute(endpoint: Endpoint, option: EndpointOption) {
         if let device = self.describer.device {
-            endpoint.execute(host: device.host!, namespace: device.hostNamespace!, option: option) { (success) in
+            let completion = { (success: Bool) in
                 if !success {
                     let alert = UIAlertController(title: "Something went wrong", message: "Ruh roh", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
                         alert.dismiss(animated: true, completion: nil)
                     }))
-                    alert.show();
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
+            let description = ServerDescription(host: device.host, hostNamespace: device.hostNamespace)
+            endpoint.execute(device: device, description: description, option: option, completion)
+//            endpoint.execute(host: device.host!, namespace: device.hostNamespace!, option: option, completion)
         }
     }
 }

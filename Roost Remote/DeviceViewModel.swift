@@ -7,10 +7,9 @@
 //
 
 import UIKit
-import ThryvUXComponents
+import LUX
 import MultiModelTableViewDataSource
 import Prelude
-import ReactiveSwift
 
 class DeviceViewModel {
 }

@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import ThryvUXComponents
-import FunkyNetwork
+import LUX
+import FunNet
+import LithoOperators
 
-class GetDevicesCall: THUXModelCall<[Device]> {
-    lazy var devicesSignal = modelSignal
-    
-    init(placeId: String, stubHolder: StubHolderProtocol? = nil) {
-        super.init(configuration: RRServerConfig.current, httpMethod: "GET", httpHeaders: [:], endpoint: "places/\(placeId)/devices", postData: nil, stubHolder: stubHolder)
-    }
+func getDevicesCall(_ placeId: String, _ serverConfig: ServerConfigurationProtocol = RRServerConfig.current) -> CombineNetCall {
+    var endpoint = FunNet.Endpoint()
+    endpoint.path = "places/\(placeId)/devices"
+    endpoint /> addJsonHeaders
+    endpoint /> authorize
+    return CombineNetCall(configuration: serverConfig, endpoint)
 }

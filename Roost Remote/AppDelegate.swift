@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import LUX
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var flowController: LUXFlowCoordinator = AppInitFlowController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -21,16 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
         
-        UINavigationBar.appearance().barTintColor = UIColor.navBgColor()
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : mainFont, NSAttributedString.Key.foregroundColor : UIColor.navTextColor()]
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor.navBgColor()
+        appearance.titleTextAttributes = [NSAttributedString.Key.font : mainFont, NSAttributedString.Key.foregroundColor : UIColor.navTextColor()]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
         
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : buttonFont], for: UIControl.State())
         UIBarButtonItem.appearance().tintColor = UIColor.navHighlightColor()
         
         UITableView.appearance().backgroundColor = UIColor.tableBgColor()
         
-        let splashVC = SplashViewController(nibName: "SplashViewController", bundle: nil)
-        window?.rootViewController = splashVC;
+        let splashVC = flowController.initialVC() //SplashViewController(nibName: "SplashViewController", bundle: nil)
+        window?.rootViewController = splashVC
         window?.makeKeyAndVisible()
         return true
     }

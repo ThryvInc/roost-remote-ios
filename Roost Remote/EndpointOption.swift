@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class EndpointOption: EndpointOptionProtocol, Decodable {
+open class EndpointOption: Decodable {
     var name: String!
     var value: Decodable?
     
@@ -35,6 +35,9 @@ open class EndpointOption: EndpointOptionProtocol, Decodable {
             value = val
         }
         if let val = try? container.decode([String: Bool].self, forKey: EndpointOptionCodingKey.value) {
+            value = val
+        }
+        if let val = try? container.decode([String: [String]].self, forKey: EndpointOptionCodingKey.value) {
             value = val
         }
     }

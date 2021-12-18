@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FunkyNetwork
+import FunNet
 
 class RRServerConfig: ServerConfiguration {
     public static let production = ServerConfiguration(scheme: "https", host: "roost-remote-devices.herokuapp.com", apiRoute: "api/v1")

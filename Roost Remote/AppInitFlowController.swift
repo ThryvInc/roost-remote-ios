@@ -7,12 +7,15 @@
 //
 
 import UIKit
-import ThryvUXComponents
+import LUX
+import THUXAuth
 import MultiModelTableViewDataSource
 import Prelude
+import Combine
 
-class AppInitFlowController: THUXAppOpenFlowController {
-    private var placesCall: GetPlacesCall?
+class AppInitFlowController: LUXAppOpenFlowController {
+    private var cancelBag = Set<AnyCancellable?>()
+    private var authedCoordinator = AuthedFlowCoordinator()
     
     override init() {
         super.init()
@@ -20,54 +23,55 @@ class AppInitFlowController: THUXAppOpenFlowController {
         setupLogin()
     }
     
+    override func initialVC() -> UIViewController? {
+        let splashVC = SplashViewController(nibName: "SplashViewController", bundle: nil)
+        splashVC.viewModel = splashViewModel
+        
+        cancelBag.insert(splashViewModel?.outputs.advanceAuthedPublisher.sink {
+            if let vc = self.authedCoordinator.initialVC() {
+                splashVC.present(vc, animated: true, completion: nil)
+            }
+        })
+        cancelBag.insert(splashViewModel?.outputs.advanceUnauthedPublisher.sink {
+            let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            self.configureLogin(viewController: loginVC)
+            let navVC = UINavigationController(rootViewController: loginVC)
+            navVC.modalTransitionStyle = .crossDissolve
+            navVC.modalPresentationStyle = .fullScreen
+            splashVC.present(navVC, animated: true, completion: nil)
+        })
+        
+        return splashVC
+    }
+    
     func setupSplash() {
-        THUXSessionManager.session = THUXUserDefaultsSession(authDefaultsKey: "rrApiKey", authHeaderKey: "X-API-Key")
-        splashViewModel = THUXSplashViewModel(minimumVisibleTime: 0.0, otherTasks: nil)
+        THUXSessionManager.primarySession = THUXUserDefaultsSession(host: "rrApiKey", authHeaderKey: "X-API-Key")
+        splashViewModel = LUXSplashViewModel(minimumVisibleTime: 0.0, otherTasks: nil)
     }
     
     func setupLogin() {
-        let call = THUXCredsLoginNetworkCall(configuration: RRServerConfig.current,
-                                             endpoint: "session",
-                                             wrapKey: nil,
-                                             stubHolder: nil)
+        let call = createSessionCall()
         
-        call.dataSignal
-            .skipNil()
-            .map(AppInitFlowController.parseAuthResponse)
-            .skipNil()
-            .observeValues(AppInitFlowController.createSession)
+        let modelPub: AnyPublisher<AuthResponse, Never> = modelPublisher(from: call.responder!.$data.eraseToAnyPublisher())
+        cancelBag.insert(modelPub.sink(receiveValue: AppInitFlowController.createSession(auth:)))
         
-        loginViewModel = THUXLoginViewModel(credsCall: call)
+        loginViewModel = LUXLoginViewModel(credsCall: call, loginModelToJson: auth(username:password:))
     }
     
     func configureLogin(viewController: LoginViewController) {
-        viewController.flowController = self
         viewController.loginViewModel = loginViewModel
-    }
-    
-    func configureMain(viewController: DevicesViewController) {
-        placesCall = GetPlacesCall()
-        placesCall?.placesSignal.observeValues { (places) in
-            if let place = places.first {
-                viewController.place = place
+        cancelBag.insert(loginViewModel?.advanceAuthedPublisher.sink {
+            if let vc = self.authedCoordinator.initialVC() {
+                viewController.present(vc, animated: true, completion: nil)
             }
-        }
-        placesCall?.fire()
-    }
-    
-    static func parseAuthResponse(jsonData: Data) -> AuthResponse? {
-        do {
-            return try JSONDecoder().decode(AuthResponse.self, from: jsonData)
-        } catch {
-            return nil
-        }
+        })
     }
     
     static func createSession(auth: AuthResponse) {
         if let apiKey = auth.apiKey {
-            let session = THUXUserDefaultsSession(authDefaultsKey: "rrApiKey", authHeaderKey: "X-API-Key")
+            let session = THUXUserDefaultsSession(host: "rrApiKey", authHeaderKey: "X-API-Key")
             session.setAuthValue(authString: apiKey)
-            THUXSessionManager.session = session
+            THUXSessionManager.primarySession = session
         }
     }
 }

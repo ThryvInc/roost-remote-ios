@@ -6,8 +6,14 @@
 //  Copyright © 2018 Elliot Schrock. All rights reserved.
 //
 
-import UIKit
+import LUX
+import FunNet
+import LithoOperators
 
-class GetDeviceTypeCall: NSObject {
-
+func getDeviceTypesCall(by typeId: String, _ serverConfig: ServerConfigurationProtocol = RRServerConfig.current) -> CombineNetCall {
+    var endpoint = FunNet.Endpoint()
+    endpoint.path = "device_types/" + typeId
+    endpoint /> addJsonHeaders
+    endpoint /> authorize
+    return CombineNetCall(configuration: serverConfig, endpoint)
 }

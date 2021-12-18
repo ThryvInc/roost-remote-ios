@@ -7,69 +7,53 @@
 //
 
 import UIKit
-import ThryvUXComponents
+import LUX
 import SDWebImage
+import LithoOperators
+import Prelude
 
-class DevicesViewController: THUXRefreshableTableViewController, UITableViewDelegate {
-    @IBOutlet weak var backgroundImageView: UIImageView!
-    var place: Place? {
-        didSet {
-            if let placeId = place?._id {
-                self.viewModel = PlaceViewModel(placeId: placeId)
-                
-                setupView()
-            }
-        }
-    }
-    var viewModel: PlaceViewModel? {
-        didSet {
-            if let viewModel = viewModel {
-                refreshableModelManager = THUXRefreshableNetworkCallManager(viewModel.call)
-                
-                viewModel.dataSource.tableView = self.tableView
-                tableView.dataSource = viewModel.dataSource
-                
-                refreshableModelManager?.refresh()
-            }
-        }
-    }
+class DevicesViewController: LUXMultiModelTableViewController<PlaceViewModel> {
+    @IBOutlet weak var backgroundImageView: UIImageView?
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var devicesButton: UIButton?
+    var onDevicesPressed: ((DevicesViewController) -> Void)?
+    @IBOutlet weak var batchesButton: UIButton?
+    var onBatchesPressed: ((DevicesViewController) -> Void)?
+    @IBOutlet weak var addButton: UIButton?
+    var onAddPressed: ((DevicesViewController) -> Void)?
+    
+    var place: Place?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.tableFooterView = UIView()
-        tableView.delegate = self
-        tableView.register(DetailsTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView?.backgroundColor = .clear
+        ifExecute(devicesButton, styleInvertedButton)
+        ifExecute(batchesButton, styleInvertedButton)
+        ifExecute(addButton, styleInvertedButton)
         
         setupView()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        refreshableModelManager?.refresh()
-    }
-    
     func setupView() {
         if let placeName = place?.name {
-            title = placeName
+            titleLabel?.text = placeName
         }
-        if let imageUrl = place?.imageUrl {
-            backgroundImageView.sd_setImage(with: URL(string: imageUrl))
-        }
+//        tableView?.delegate = self
+//        if let imageUrl = place?.imageUrl {
+//            backgroundImageView.sd_setImage(with: URL(string: imageUrl))
+//        }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
-        
-        if let device = (viewModel?.dataSource.sections?.first?.items?[indexPath.row] as? DeviceTableItem)?.device {
-            let endpointVC = EndpointsViewController(nibName: "EndpointsViewController", bundle: nil)
-            let devDesc = DeviceDescription()
-            devDesc.name = device.name
-            devDesc.host = device.describer
-            devDesc.device = device
-            endpointVC.describer = devDesc
-            navigationController?.pushViewController(endpointVC, animated: true)
-        }
+    @IBAction func devicesPressed() {
+        onDevicesPressed?(self)
+    }
+    
+    @IBAction func batchesPressed() {
+        onBatchesPressed?(self)
+    }
+    
+    @IBAction func addPressed() {
+        onAddPressed?(self)
     }
 }

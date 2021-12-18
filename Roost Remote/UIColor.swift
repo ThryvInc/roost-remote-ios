@@ -33,6 +33,12 @@ extension UIColor {
     class func buttonTextColor() -> UIColor {
         return navHighlightColor()
     }
+    class func invertedButtonBgColor() -> UIColor {
+        return teal()
+    }
+    class func invertedButtonTextColor() -> UIColor {
+        return navTextColor()
+    }
     class func burgundy() -> UIColor {
         return UIColor(red: 112.0/255.0, green: 11.0/255.0, blue: 77.0/255.0, alpha: 1)
     }
