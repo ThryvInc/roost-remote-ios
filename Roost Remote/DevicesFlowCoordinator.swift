@@ -89,6 +89,8 @@ class DevicesFlowCoordinator: LUXFlowCoordinator {
         vc.tableView?.dataSource = vm.dataSource
         vc.tableView?.delegate = batchDelegate
         vc.tableView?.reloadData()
+        
+        vc.onViewDidAppear = { _, _ in sub.value = flows() }
     }
     
     func addNewBatch(_ vc: DevicesViewController) {

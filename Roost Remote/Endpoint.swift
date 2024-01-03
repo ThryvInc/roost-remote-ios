@@ -17,6 +17,7 @@ class Endpoint: Decodable {
     func execute(device: Device, description: ServerDescription, option: EndpointOption, _ completion: @escaping ((Bool) -> Void)) {
         let netCall = call(from: device, description: description, endpoint: self, option: option)
         netCall.execute { (data, response, error) -> Void in
+//            print(response)
             if let httpResponse = response {
                 completion(httpResponse.statusCode < 300)
             } else {
@@ -27,7 +28,7 @@ class Endpoint: Decodable {
     
     func execute(host: String, namespace: String, option: EndpointOption, _ completion: @escaping ((Bool) -> Void)) {
         if let data: Data = optionData(for: option) {
-            Roost_Remote.execute(host: host, namespace: namespace, endpoint: self.endpoint, method: self.method, data: data, completion)
+            RR.execute(host: host, namespace: namespace, endpoint: self.endpoint, method: self.method, data: data, completion)
         }
     }
     
@@ -57,13 +58,15 @@ func call(from host: String, namespace: String, endpoint: String, method: String
     return call
 }
 
-func execute(host: String, namespace: String, endpoint: String, method: String, data: Data?, _ completion: @escaping ((Bool) -> Void)) {
-    let netCall = call(from: host, namespace: namespace, endpoint: endpoint, method: method, data: data)
-    netCall.execute { (data, response, error) -> Void in
-        if let httpResponse = response {
-            completion(httpResponse.statusCode < 300)
-        }else{
-            completion(error == nil)
+enum RR {
+    static func execute(host: String, namespace: String, endpoint: String, method: String, data: Data?, _ completion: @escaping ((Bool) -> Void)) {
+        let netCall = call(from: host, namespace: namespace, endpoint: endpoint, method: method, data: data)
+        netCall.execute { (data, response, error) -> Void in
+            if let httpResponse = response {
+                completion(httpResponse.statusCode < 300)
+            }else{
+                completion(error == nil)
+            }
         }
     }
 }

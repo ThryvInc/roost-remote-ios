@@ -7,15 +7,21 @@
 //
 
 import Foundation
-import LithoOperators
-import LUX
+import WatchConnectivity
 
-struct Flow {
+struct Flow: Codable, Equatable, Identifiable {
+    var id: String {
+        return name
+    }
     var name: String
     var waitTasks: [WaitTask]
     var deviceTasks: [EndpointOptionTask]
     var flowTasks: [FlowTask]
     var triggers: [Trigger]?
+    
+    static func ==(lhs: Flow, rhs: Flow) -> Bool {
+        return lhs.name == rhs.name
+    }
     
     func tasks() -> [Task] {
         var tasks: [Task] = [Task]()
@@ -45,17 +51,26 @@ struct Flow {
         }
     }
 }
-extension Flow: Codable {}
 
 func flows() -> [Flow] {
-    if let data = UserDefaults.standard.data(forKey: "flowsData"), let flows = LUXJsonProvider.forceDecode([Flow].self, from: data) {
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    decoder.dateDecodingStrategy = .iso8601
+    if let data = UserDefaults.standard.data(forKey: "flowsData"), let flows = try? decoder.decode([Flow].self, from: data) {
         return flows
     }
     return [Flow]()
 }
 
 func save(flows: [Flow]) {
-    UserDefaults.standard.set(LUXJsonProvider.forceEncode(flows), forKey: "flowsData")
+    let encoder = JSONEncoder()
+    encoder.keyEncodingStrategy = .convertToSnakeCase
+    encoder.dateEncodingStrategy = .iso8601
+    UserDefaults.standard.set(try! encoder.encode(flows), forKey: "flowsData")
+    
+    #if os(iOS)
+    sendFlows(WCSession.default)
+    #endif
 }
 
 func triggerFlow(named flowName: String, callback: @escaping () -> Void) {

@@ -40,9 +40,9 @@ class DevicesViewController: LUXMultiModelTableViewController<PlaceViewModel> {
             titleLabel?.text = placeName
         }
 //        tableView?.delegate = self
-//        if let imageUrl = place?.imageUrl {
-//            backgroundImageView.sd_setImage(with: URL(string: imageUrl))
-//        }
+        if let imageUrl = place?.imageUrl {
+            backgroundImageView?.sd_setImage(with: URL(string: imageUrl))
+        }
     }
     
     @IBAction func devicesPressed() {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,52 @@
 		493D44F423C506A4008D1BD5 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F323C506A4008D1BD5 /* Descriptions.swift */; };
 		493D44F723C5706C008D1BD5 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F523C5706C008D1BD5 /* AlarmTableViewCell.swift */; };
 		493D44F823C5706C008D1BD5 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493D44F623C5706C008D1BD5 /* AlarmTableViewCell.xib */; };
+		49695E582AD1F8B900B33729 /* Roost_Remote_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E572AD1F8B900B33729 /* Roost_Remote_WatchApp.swift */; };
+		49695E5A2AD1F8B900B33729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E592AD1F8B900B33729 /* ContentView.swift */; };
+		49695E5C2AD1F8BA00B33729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49695E5B2AD1F8BA00B33729 /* Assets.xcassets */; };
+		49695E5F2AD1F8BA00B33729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49695E5E2AD1F8BA00B33729 /* Preview Assets.xcassets */; };
+		49695E692AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E682AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppTests.swift */; };
+		49695E732AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E722AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITests.swift */; };
+		49695E752AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E742AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift */; };
+		49695E782AD1F8BA00B33729 /* Roost Remote Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49695E552AD1F8B900B33729 /* Roost Remote Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49695E892AD1F97E00B33729 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49695E882AD1F97E00B33729 /* WidgetKit.framework */; };
+		49695E8B2AD1F97E00B33729 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49695E8A2AD1F97E00B33729 /* SwiftUI.framework */; };
+		49695E8E2AD1F97E00B33729 /* Complication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E8D2AD1F97E00B33729 /* Complication.swift */; };
+		49695E902AD1F97E00B33729 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E8F2AD1F97E00B33729 /* AppIntent.swift */; };
+		49695E922AD1F97F00B33729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49695E912AD1F97F00B33729 /* Assets.xcassets */; };
+		49695E962AD1F97F00B33729 /* ComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 49695E872AD1F97E00B33729 /* ComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49695E9B2AD1FBD800B33729 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49333D6A1B37517E00DA154F /* UIColor.swift */; };
+		49695E9C2AD1FBD900B33729 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49333D6A1B37517E00DA154F /* UIColor.swift */; };
+		49695E9E2AD1FF9500B33729 /* WatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E9D2AD1FF9500B33729 /* WatchDelegate.swift */; };
+		49695E9F2AD2009E00B33729 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
+		49695EA02AD2009E00B33729 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1E23BBE3520019C720 /* Task.swift */; };
+		49695EA12AD2009E00B33729 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7061E4F8C6A00F4EAA9 /* Device.swift */; };
+		49695EA22AD2009E00B33729 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B220FD76C2005FFE2D /* Place.swift */; };
+		49695EA32AD2009E00B33729 /* WatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E9D2AD1FF9500B33729 /* WatchDelegate.swift */; };
+		49695EA42AD2009E00B33729 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0823BB01670019C720 /* Auth.swift */; };
+		49695EA62AD2009E00B33729 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235AF20FD7642005FFE2D /* AuthResponse.swift */; };
+		49695EA72AD2009E00B33729 /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
+		49695EA82AD2009E00B33729 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1C23BBDEE50019C720 /* Flow.swift */; };
+		49695EA92AD2009E00B33729 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF2023BBE35E0019C720 /* Trigger.swift */; };
+		49695EAA2AD2009E00B33729 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F323C506A4008D1BD5 /* Descriptions.swift */; };
+		49695EAB2AD2009E00B33729 /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
+		49695EAC2AD200A100B33729 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974F6FF1AFAC5FE00816CF8 /* Endpoint.swift */; };
+		49695EAD2AD200A100B33729 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1E23BBE3520019C720 /* Task.swift */; };
+		49695EAE2AD200A100B33729 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496FE7061E4F8C6A00F4EAA9 /* Device.swift */; };
+		49695EAF2AD200A100B33729 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235B220FD76C2005FFE2D /* Place.swift */; };
+		49695EB02AD200A100B33729 /* WatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695E9D2AD1FF9500B33729 /* WatchDelegate.swift */; };
+		49695EB12AD200A100B33729 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0823BB01670019C720 /* Auth.swift */; };
+		49695EB32AD200A100B33729 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B235AF20FD7642005FFE2D /* AuthResponse.swift */; };
+		49695EB42AD200A100B33729 /* EndpointOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC61B05AB1F00AD67BE /* EndpointOption.swift */; };
+		49695EB52AD200A100B33729 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF1C23BBDEE50019C720 /* Flow.swift */; };
+		49695EB62AD200A100B33729 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF2023BBE35E0019C720 /* Trigger.swift */; };
+		49695EB72AD200A100B33729 /* Descriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493D44F323C506A4008D1BD5 /* Descriptions.swift */; };
+		49695EB82AD200A100B33729 /* EndpointOptionHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499B5DC91B05AC2700AD67BE /* EndpointOptionHolder.swift */; };
+		49695F032AD2046600B33729 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0A23BB04380019C720 /* BaseNetworkCall.swift */; };
+		49695F042AD2046800B33729 /* BaseNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922AF0A23BB04380019C720 /* BaseNetworkCall.swift */; };
+		49695F072AD240D000B33729 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 49695F062AD240D000B33729 /* ComposableArchitecture */; };
+		49695F092AD2413000B33729 /* FlowsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49695F082AD2413000B33729 /* FlowsReducer.swift */; };
+		49695F0B2AD24B3A00B33729 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 49695F0A2AD24B3A00B33729 /* ComposableArchitecture */; };
 		4969F5C620FE7EF900888360 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C520FE7EF900888360 /* DeviceViewModel.swift */; };
 		4969F5CA20FEADB400888360 /* GetEndpointsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5C920FEADB400888360 /* GetEndpointsCall.swift */; };
 		4969F5CC20FEB36200888360 /* GetDeviceTypeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */; };
@@ -72,6 +118,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		49695E652AD1F8BA00B33729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49695E542AD1F8B900B33729;
+			remoteInfo = "Roost Remote Watch Watch App";
+		};
+		49695E6F2AD1F8BA00B33729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49695E542AD1F8B900B33729;
+			remoteInfo = "Roost Remote Watch Watch App";
+		};
+		49695E762AD1F8BA00B33729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49695E542AD1F8B900B33729;
+			remoteInfo = "Roost Remote Watch Watch App";
+		};
+		49695E942AD1F97F00B33729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49695E862AD1F97E00B33729;
+			remoteInfo = ComplicationExtension;
+		};
 		49CD55EB1AF8685900673328 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 49CD55CD1AF8685900673328 /* Project object */;
@@ -80,6 +154,31 @@
 			remoteInfo = "Roost Remote";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49695E792AD1F8BA00B33729 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				49695E782AD1F8BA00B33729 /* Roost Remote Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E9A2AD1F97F00B33729 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49695E962AD1F97F00B33729 /* ComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		099767B8A80F3A41A2F28303 /* Pods_Roost_RemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roost_RemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +204,49 @@
 		493D44F323C506A4008D1BD5 /* Descriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Descriptions.swift; sourceTree = "<group>"; };
 		493D44F523C5706C008D1BD5 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		493D44F623C5706C008D1BD5 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		49695E552AD1F8B900B33729 /* Roost Remote Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roost Remote Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695E572AD1F8B900B33729 /* Roost_Remote_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roost_Remote_WatchApp.swift; sourceTree = "<group>"; };
+		49695E592AD1F8B900B33729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49695E5B2AD1F8BA00B33729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49695E5E2AD1F8BA00B33729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49695E642AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roost Remote Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695E682AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roost_Remote_Watch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		49695E6E2AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roost Remote Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695E722AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roost_Remote_Watch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		49695E742AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49695E872AD1F97E00B33729 /* ComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ComplicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695E882AD1F97E00B33729 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		49695E8A2AD1F97E00B33729 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		49695E8D2AD1F97E00B33729 /* Complication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complication.swift; sourceTree = "<group>"; };
+		49695E8F2AD1F97E00B33729 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		49695E912AD1F97F00B33729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49695E932AD1F97F00B33729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49695E9D2AD1FF9500B33729 /* WatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDelegate.swift; sourceTree = "<group>"; };
+		49695EB92AD2010400B33729 /* Pods_Roost_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Roost_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EBD2AD2011000B33729 /* Pods_Roost_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Roost_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC12AD2014C00B33729 /* FunNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FunNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC22AD2014C00B33729 /* ISO8601DateFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ISO8601DateFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC32AD2014C00B33729 /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC42AD2014C00B33729 /* LUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC52AD2014C00B33729 /* MultiModelTableViewDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiModelTableViewDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC62AD2014C00B33729 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC72AD2014C00B33729 /* PlaygroundVCHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PlaygroundVCHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC82AD2014C00B33729 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EC92AD2014C00B33729 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695ECA2AD2014C00B33729 /* SSPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695ECB2AD2014C00B33729 /* THUXAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = THUXAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE22AD2016300B33729 /* FunNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FunNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE32AD2016300B33729 /* ISO8601DateFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ISO8601DateFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE42AD2016300B33729 /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE52AD2016300B33729 /* LUX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LUX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE62AD2016300B33729 /* MultiModelTableViewDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MultiModelTableViewDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE72AD2016300B33729 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE82AD2016300B33729 /* PlaygroundVCHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PlaygroundVCHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EE92AD2016300B33729 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EEA2AD2016300B33729 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EEB2AD2016300B33729 /* SSPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695EEC2AD2016300B33729 /* THUXAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = THUXAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49695F082AD2413000B33729 /* FlowsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowsReducer.swift; sourceTree = "<group>"; };
 		4969F5C520FE7EF900888360 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		4969F5C920FEADB400888360 /* GetEndpointsCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEndpointsCall.swift; sourceTree = "<group>"; };
 		4969F5CB20FEB36200888360 /* GetDeviceTypeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceTypeCall.swift; sourceTree = "<group>"; };
@@ -149,10 +291,42 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49695E522AD1F8B900B33729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695F072AD240D000B33729 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E612AD1F8BA00B33729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E6B2AD1F8BA00B33729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E842AD1F97E00B33729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695E8B2AD1F97E00B33729 /* SwiftUI.framework in Frameworks */,
+				49695E892AD1F97E00B33729 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49CD55D21AF8685900673328 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49695F0B2AD24B3A00B33729 /* ComposableArchitecture in Frameworks */,
 				510F8E3A85610C2AC30EFFC6 /* Pods_Roost_Remote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +348,54 @@
 				49B235BB20FD77B5005FFE2D /* DeviceTableItem.swift */,
 			);
 			name = Items;
+			sourceTree = "<group>";
+		};
+		49695E562AD1F8B900B33729 /* Roost Remote Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				49695E572AD1F8B900B33729 /* Roost_Remote_WatchApp.swift */,
+				49695E592AD1F8B900B33729 /* ContentView.swift */,
+				49695F082AD2413000B33729 /* FlowsReducer.swift */,
+				49695E5B2AD1F8BA00B33729 /* Assets.xcassets */,
+				49695E5D2AD1F8BA00B33729 /* Preview Content */,
+			);
+			path = "Roost Remote Watch Watch App";
+			sourceTree = "<group>";
+		};
+		49695E5D2AD1F8BA00B33729 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49695E5E2AD1F8BA00B33729 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49695E672AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				49695E682AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppTests.swift */,
+			);
+			path = "Roost Remote Watch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		49695E712AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49695E722AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITests.swift */,
+				49695E742AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Roost Remote Watch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		49695E8C2AD1F97E00B33729 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				49695E8D2AD1F97E00B33729 /* Complication.swift */,
+				49695E8F2AD1F97E00B33729 /* AppIntent.swift */,
+				49695E912AD1F97F00B33729 /* Assets.xcassets */,
+				49695E932AD1F97F00B33729 /* Info.plist */,
+			);
+			path = Complication;
 			sourceTree = "<group>";
 		};
 		4974F7011AFACBF400816CF8 /* Network Calls */ = {
@@ -252,6 +474,10 @@
 			children = (
 				49CD55D71AF8685900673328 /* Roost Remote */,
 				49CD55ED1AF8685900673328 /* Roost RemoteTests */,
+				49695E562AD1F8B900B33729 /* Roost Remote Watch Watch App */,
+				49695E672AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests */,
+				49695E712AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests */,
+				49695E8C2AD1F97E00B33729 /* Complication */,
 				49CD55D61AF8685900673328 /* Products */,
 				62A9159C8AAE5EE63D7EDBF2 /* Pods */,
 				C4183F219479894E4E46CB1E /* Frameworks */,
@@ -263,6 +489,10 @@
 			children = (
 				49CD55D51AF8685900673328 /* Roost Remote.app */,
 				49CD55EA1AF8685900673328 /* Roost RemoteTests.xctest */,
+				49695E552AD1F8B900B33729 /* Roost Remote Watch Watch App.app */,
+				49695E642AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests.xctest */,
+				49695E6E2AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests.xctest */,
+				49695E872AD1F97E00B33729 /* ComplicationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +572,7 @@
 				4922AF1C23BBDEE50019C720 /* Flow.swift */,
 				4922AF1E23BBE3520019C720 /* Task.swift */,
 				4922AF2023BBE35E0019C720 /* Trigger.swift */,
+				49695E9D2AD1FF9500B33729 /* WatchDelegate.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -360,8 +591,34 @@
 		C4183F219479894E4E46CB1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49695EE22AD2016300B33729 /* FunNet.framework */,
+				49695EE32AD2016300B33729 /* ISO8601DateFormatter.framework */,
+				49695EE42AD2016300B33729 /* LithoOperators.framework */,
+				49695EE52AD2016300B33729 /* LUX.framework */,
+				49695EE62AD2016300B33729 /* MultiModelTableViewDataSource.framework */,
+				49695EE72AD2016300B33729 /* OHHTTPStubs.framework */,
+				49695EE82AD2016300B33729 /* PlaygroundVCHelpers.framework */,
+				49695EE92AD2016300B33729 /* Prelude.framework */,
+				49695EEA2AD2016300B33729 /* SDWebImage.framework */,
+				49695EEB2AD2016300B33729 /* SSPullToRefresh.framework */,
+				49695EEC2AD2016300B33729 /* THUXAuth.framework */,
+				49695EC12AD2014C00B33729 /* FunNet.framework */,
+				49695EC22AD2014C00B33729 /* ISO8601DateFormatter.framework */,
+				49695EC32AD2014C00B33729 /* LithoOperators.framework */,
+				49695EC42AD2014C00B33729 /* LUX.framework */,
+				49695EC52AD2014C00B33729 /* MultiModelTableViewDataSource.framework */,
+				49695EC62AD2014C00B33729 /* OHHTTPStubs.framework */,
+				49695EC72AD2014C00B33729 /* PlaygroundVCHelpers.framework */,
+				49695EC82AD2014C00B33729 /* Prelude.framework */,
+				49695EC92AD2014C00B33729 /* SDWebImage.framework */,
+				49695ECA2AD2014C00B33729 /* SSPullToRefresh.framework */,
+				49695ECB2AD2014C00B33729 /* THUXAuth.framework */,
+				49695EBD2AD2011000B33729 /* Pods_Roost_Remote.framework */,
+				49695EB92AD2010400B33729 /* Pods_Roost_Remote.framework */,
 				3C38E48CA6AE682E09ADFEC8 /* Pods_Roost_Remote.framework */,
 				099767B8A80F3A41A2F28303 /* Pods_Roost_RemoteTests.framework */,
+				49695E882AD1F97E00B33729 /* WidgetKit.framework */,
+				49695E8A2AD1F97E00B33729 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,6 +626,81 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49695E542AD1F8B900B33729 /* Roost Remote Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49695E802AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch App" */;
+			buildPhases = (
+				49695E512AD1F8B900B33729 /* Sources */,
+				49695E522AD1F8B900B33729 /* Frameworks */,
+				49695E532AD1F8B900B33729 /* Resources */,
+				49695E9A2AD1F97F00B33729 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49695E952AD1F97F00B33729 /* PBXTargetDependency */,
+			);
+			name = "Roost Remote Watch Watch App";
+			packageProductDependencies = (
+				49695F062AD240D000B33729 /* ComposableArchitecture */,
+			);
+			productName = "Roost Remote Watch Watch App";
+			productReference = 49695E552AD1F8B900B33729 /* Roost Remote Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49695E632AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49695E812AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch AppTests" */;
+			buildPhases = (
+				49695E602AD1F8BA00B33729 /* Sources */,
+				49695E612AD1F8BA00B33729 /* Frameworks */,
+				49695E622AD1F8BA00B33729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49695E662AD1F8BA00B33729 /* PBXTargetDependency */,
+			);
+			name = "Roost Remote Watch Watch AppTests";
+			productName = "Roost Remote Watch Watch AppTests";
+			productReference = 49695E642AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49695E6D2AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49695E822AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch AppUITests" */;
+			buildPhases = (
+				49695E6A2AD1F8BA00B33729 /* Sources */,
+				49695E6B2AD1F8BA00B33729 /* Frameworks */,
+				49695E6C2AD1F8BA00B33729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49695E702AD1F8BA00B33729 /* PBXTargetDependency */,
+			);
+			name = "Roost Remote Watch Watch AppUITests";
+			productName = "Roost Remote Watch Watch AppUITests";
+			productReference = 49695E6E2AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		49695E862AD1F97E00B33729 /* ComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49695E972AD1F97F00B33729 /* Build configuration list for PBXNativeTarget "ComplicationExtension" */;
+			buildPhases = (
+				49695E832AD1F97E00B33729 /* Sources */,
+				49695E842AD1F97E00B33729 /* Frameworks */,
+				49695E852AD1F97E00B33729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComplicationExtension;
+			productName = ComplicationExtension;
+			productReference = 49695E872AD1F97E00B33729 /* ComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		49CD55D41AF8685900673328 /* Roost Remote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49CD55F41AF8685900673328 /* Build configuration list for PBXNativeTarget "Roost Remote" */;
@@ -378,12 +710,17 @@
 				49CD55D21AF8685900673328 /* Frameworks */,
 				49CD55D31AF8685900673328 /* Resources */,
 				A14DCD1166ED8A3727BB3CDC /* [CP] Embed Pods Frameworks */,
+				49695E792AD1F8BA00B33729 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				49695E772AD1F8BA00B33729 /* PBXTargetDependency */,
 			);
 			name = "Roost Remote";
+			packageProductDependencies = (
+				49695F0A2AD24B3A00B33729 /* ComposableArchitecture */,
+			);
 			productName = "Roost Remote";
 			productReference = 49CD55D51AF8685900673328 /* Roost Remote.app */;
 			productType = "com.apple.product-type.application";
@@ -415,10 +752,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0720;
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Elliot Schrock";
 				TargetAttributes = {
+					49695E542AD1F8B900B33729 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					49695E632AD1F8BA00B33729 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 49695E542AD1F8B900B33729;
+					};
+					49695E6D2AD1F8BA00B33729 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 49695E542AD1F8B900B33729;
+					};
+					49695E862AD1F97E00B33729 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					49CD55D41AF8685900673328 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = HK6WSAR793;
@@ -443,17 +794,55 @@
 				Base,
 			);
 			mainGroup = 49CD55CC1AF8685900673328;
+			packageReferences = (
+				49695F052AD240D000B33729 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 49CD55D61AF8685900673328 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				49CD55D41AF8685900673328 /* Roost Remote */,
 				49CD55E91AF8685900673328 /* Roost RemoteTests */,
+				49695E542AD1F8B900B33729 /* Roost Remote Watch Watch App */,
+				49695E632AD1F8BA00B33729 /* Roost Remote Watch Watch AppTests */,
+				49695E6D2AD1F8BA00B33729 /* Roost Remote Watch Watch AppUITests */,
+				49695E862AD1F97E00B33729 /* ComplicationExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49695E532AD1F8B900B33729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695E5F2AD1F8BA00B33729 /* Preview Assets.xcassets in Resources */,
+				49695E5C2AD1F8BA00B33729 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E622AD1F8BA00B33729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E6C2AD1F8BA00B33729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E852AD1F97E00B33729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695E922AD1F97F00B33729 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49CD55D31AF8685900673328 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,6 +969,70 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49695E512AD1F8B900B33729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695EA32AD2009E00B33729 /* WatchDelegate.swift in Sources */,
+				49695F032AD2046600B33729 /* BaseNetworkCall.swift in Sources */,
+				49695EA72AD2009E00B33729 /* EndpointOption.swift in Sources */,
+				49695E5A2AD1F8B900B33729 /* ContentView.swift in Sources */,
+				49695EA92AD2009E00B33729 /* Trigger.swift in Sources */,
+				49695E9C2AD1FBD900B33729 /* UIColor.swift in Sources */,
+				49695EA02AD2009E00B33729 /* Task.swift in Sources */,
+				49695EA12AD2009E00B33729 /* Device.swift in Sources */,
+				49695EA82AD2009E00B33729 /* Flow.swift in Sources */,
+				49695F092AD2413000B33729 /* FlowsReducer.swift in Sources */,
+				49695EAA2AD2009E00B33729 /* Descriptions.swift in Sources */,
+				49695E9F2AD2009E00B33729 /* Endpoint.swift in Sources */,
+				49695EA22AD2009E00B33729 /* Place.swift in Sources */,
+				49695EA62AD2009E00B33729 /* AuthResponse.swift in Sources */,
+				49695EAB2AD2009E00B33729 /* EndpointOptionHolder.swift in Sources */,
+				49695E582AD1F8B900B33729 /* Roost_Remote_WatchApp.swift in Sources */,
+				49695EA42AD2009E00B33729 /* Auth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E602AD1F8BA00B33729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695E692AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E6A2AD1F8BA00B33729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695E752AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITestsLaunchTests.swift in Sources */,
+				49695E732AD1F8BA00B33729 /* Roost_Remote_Watch_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49695E832AD1F97E00B33729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49695EB02AD200A100B33729 /* WatchDelegate.swift in Sources */,
+				49695F042AD2046800B33729 /* BaseNetworkCall.swift in Sources */,
+				49695EB42AD200A100B33729 /* EndpointOption.swift in Sources */,
+				49695E8E2AD1F97E00B33729 /* Complication.swift in Sources */,
+				49695EB62AD200A100B33729 /* Trigger.swift in Sources */,
+				49695E9B2AD1FBD800B33729 /* UIColor.swift in Sources */,
+				49695EAD2AD200A100B33729 /* Task.swift in Sources */,
+				49695EAE2AD200A100B33729 /* Device.swift in Sources */,
+				49695EB52AD200A100B33729 /* Flow.swift in Sources */,
+				49695EB72AD200A100B33729 /* Descriptions.swift in Sources */,
+				49695EAC2AD200A100B33729 /* Endpoint.swift in Sources */,
+				49695EAF2AD200A100B33729 /* Place.swift in Sources */,
+				49695EB32AD200A100B33729 /* AuthResponse.swift in Sources */,
+				49695EB82AD200A100B33729 /* EndpointOptionHolder.swift in Sources */,
+				49695E902AD1F97E00B33729 /* AppIntent.swift in Sources */,
+				49695EB12AD200A100B33729 /* Auth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49CD55D11AF8685900673328 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +1068,7 @@
 				49333D6B1B37517E00DA154F /* UIColor.swift in Sources */,
 				493692FA23BE4D8900ADC278 /* LongTapDetailsTableViewCell.swift in Sources */,
 				4922AF1523BBD5120019C720 /* TabsFlowCoordinator.swift in Sources */,
+				49695E9E2AD1FF9500B33729 /* WatchDelegate.swift in Sources */,
 				4974F7001AFAC5FE00816CF8 /* Endpoint.swift in Sources */,
 				49CD55DB1AF8685900673328 /* AppDelegate.swift in Sources */,
 				4922AF0F23BBCBDF0019C720 /* DevicesFlowCoordinator.swift in Sources */,
@@ -647,6 +1101,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		49695E662AD1F8BA00B33729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49695E542AD1F8B900B33729 /* Roost Remote Watch Watch App */;
+			targetProxy = 49695E652AD1F8BA00B33729 /* PBXContainerItemProxy */;
+		};
+		49695E702AD1F8BA00B33729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49695E542AD1F8B900B33729 /* Roost Remote Watch Watch App */;
+			targetProxy = 49695E6F2AD1F8BA00B33729 /* PBXContainerItemProxy */;
+		};
+		49695E772AD1F8BA00B33729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49695E542AD1F8B900B33729 /* Roost Remote Watch Watch App */;
+			targetProxy = 49695E762AD1F8BA00B33729 /* PBXContainerItemProxy */;
+		};
+		49695E952AD1F97F00B33729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49695E862AD1F97E00B33729 /* ComplicationExtension */;
+			targetProxy = 49695E942AD1F97F00B33729 /* PBXContainerItemProxy */;
+		};
 		49CD55EC1AF8685900673328 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 49CD55D41AF8685900673328 /* Roost Remote */;
@@ -666,6 +1140,332 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		49695E7A2AD1F8BA00B33729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"Roost Remote Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roost Remote Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.rndapp.Roost-Remote";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.Roost-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
+			};
+			name = Debug;
+		};
+		49695E7B2AD1F8BA00B33729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Roost Remote Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Roost Remote Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.rndapp.Roost-Remote";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.Roost-Remote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
+			};
+			name = Release;
+		};
+		49695E7C2AD1F8BA00B33729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lithobyte.Roost-Remote-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roost Remote Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		49695E7D2AD1F8BA00B33729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lithobyte.Roost-Remote-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roost Remote Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Roost Remote Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		49695E7E2AD1F8BA00B33729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lithobyte.Roost-Remote-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Roost Remote Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		49695E7F2AD1F8BA00B33729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lithobyte.Roost-Remote-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Roost Remote Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		49695E982AD1F97F00B33729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Complication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Complication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Elliot Schrock. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.Roost-Remote.watchkitapp.Complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
+			};
+			name = Debug;
+		};
+		49695E992AD1F97F00B33729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK6WSAR793;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Complication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Complication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Elliot Schrock. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.Roost-Remote.watchkitapp.Complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.3;
+			};
+			name = Release;
+		};
 		49CD55F21AF8685900673328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -768,7 +1568,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "75c8dfb7-f570-49ec-a5ed-60510550dc1e";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -785,8 +1586,11 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -810,8 +1614,11 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HK6WSAR793;
 				INFOPLIST_FILE = "Roost Remote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -838,7 +1645,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Roost RemoteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -859,7 +1670,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Roost RemoteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rndapp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -871,6 +1686,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		49695E802AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49695E7A2AD1F8BA00B33729 /* Debug */,
+				49695E7B2AD1F8BA00B33729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49695E812AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49695E7C2AD1F8BA00B33729 /* Debug */,
+				49695E7D2AD1F8BA00B33729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49695E822AD1F8BA00B33729 /* Build configuration list for PBXNativeTarget "Roost Remote Watch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49695E7E2AD1F8BA00B33729 /* Debug */,
+				49695E7F2AD1F8BA00B33729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49695E972AD1F97F00B33729 /* Build configuration list for PBXNativeTarget "ComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49695E982AD1F97F00B33729 /* Debug */,
+				49695E992AD1F97F00B33729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49CD55D01AF8685900673328 /* Build configuration list for PBXProject "Roost Remote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -899,6 +1750,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49695F052AD240D000B33729 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49695F062AD240D000B33729 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49695F052AD240D000B33729 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		49695F0A2AD24B3A00B33729 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49695F052AD240D000B33729 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49CD55CD1AF8685900673328 /* Project object */;
 }

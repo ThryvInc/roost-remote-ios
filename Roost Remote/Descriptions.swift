@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import LUX
 
 struct ServerDescription {
     let host: String?

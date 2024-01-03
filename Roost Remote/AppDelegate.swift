@@ -8,12 +8,21 @@
 
 import UIKit
 import LUX
+import WatchConnectivity
+
+func sendFlows(_ session: WCSession) {
+    session.sendMessage(["flows": try? JSONEncoder().encode(flows())], replyHandler: { _ in
+        print("reply")
+    })
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var flowController: LUXFlowCoordinator = AppInitFlowController()
+    var session: WCSession = .default
+    var watchDelegate = WatchConnectivityDelegate({ sendFlows(WCSession.default) }, didReceiveMessage: { _ in })
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -36,6 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashVC = flowController.initialVC() //SplashViewController(nibName: "SplashViewController", bundle: nil)
         window?.rootViewController = splashVC
         window?.makeKeyAndVisible()
+        
+        session.delegate = watchDelegate
+        session.activate()
         return true
     }
 
